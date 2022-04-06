@@ -14,18 +14,17 @@
     color: orange;
 }
 .navbar{
-    background-color: black;
+    background-color:black;
 
 }
-.btnsearch{
-    background-color: #ffa500;
-    border-radius: 5px;
+[class="navbar-toggler"]{
+border: white 1px solid;
+border-radius: 10px;
+
+
 }
-.btnsearch:hover{
-   
-    background-color: #db9718;
-    color: black;
-   
+[class="fa-solid fa-bars"]{
+    color: white;
 }
 
 
