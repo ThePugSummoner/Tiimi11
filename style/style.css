@@ -1,0 +1,92 @@
+*{
+    color: black;
+}
+.container{
+    text-align: left;
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar-brand{
+    color: orange;
+}
+.nav-link{
+    color: orange;
+}
+.navbar{
+    background-color: black;
+
+}
+.btnsearch{
+    background-color: #ffa500;
+    border-radius: 5px;
+}
+.btnsearch:hover{
+   
+    background-color: #db9718;
+    color: black;
+   
+}
+
+
+.container-fluid a:hover{
+    display: block;
+    background-color: #db9718;
+   
+    
+}
+.logo{
+    position: relative;
+    background-color:transparent;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    
+}
+.col-auto{
+    background-color: #ffa500;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+.matikkapaketti{
+    text-decoration: none;
+    
+}
+.yksiluokka{
+text-decoration: none;
+color: black;
+
+}
+
+.neljaluokka{
+    text-decoration: none;
+    color: black;
+
+}
+.col-auto a:hover{
+    display: block;
+    background-color: #db9718;
+    color: black;
+    border-radius: 10px;
+    width: 200px;
+    border: black 1px solid;
+    padding: 5px;
+    
+}
+[class="col py-3"]{
+    background-image: url(/images/back-to-school-gfe6472cd4_1920.jpg);
+    
+    
+}
+.teksti{
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    
+}
+.teksti p {
+    font-weight: bold;
+    color: black;
+}
