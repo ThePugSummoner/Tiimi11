@@ -43,38 +43,22 @@ border-radius: 10px;
     
 }
 .col-auto{
-    background-color: #ffa500;
-    padding: 5px;
-    margin-bottom: 5px;
-    
-}
-.matikkapaketti{
-    text-decoration: none;
-    
-}
-.yksiluokka{
-text-decoration: none;
-color: black;
-
+    background-color: #ffa500;    
 }
 
-.neljaluokka{
-    text-decoration: none;
-    color: black;
 
-}
 .col-auto a:hover{
     display: block;
     background-color: #db9718;
-    color: black;
     border-radius: 10px;
     width: 200px;
     border: black 1px solid;
-    padding: 5px;
-    
+      
 }
-[class="col py-3"]{
+
+[class*="col py-3"]{
     background-image: url(/images/back-to-school-gfe6472cd4_1920.jpg);
+    
     
     
 }
@@ -91,7 +75,21 @@ color: black;
 }
 
 .frontimg {
-    padding: 30px;
-    width: max-content;
-    height: auto;
+    height: 60%;
+    width: 50%;
+}
+@media screen and (max-width: 650px) {
+
+.col-auto:hover{
+    width: 180px;
+}
+.col-auto span:hover{
+    width: 150px;
+}
+.col-auto a:hover{
+    display: block;
+    background-color: #db9718;
+    width: 150px;
+             
+    } 
 }
