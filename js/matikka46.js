@@ -16,6 +16,7 @@ function answerCheck(i) {
 }
 let multiply = "";
 
+//radio uncheck
 function checkRadioBox(id, id2, id3, id4, id5) {
 
     document.getElementById(id).checked = false;
@@ -25,13 +26,14 @@ function checkRadioBox(id, id2, id3, id4, id5) {
     document.getElementById(id5).checked = false;
 
 }
-
+//display
 function styleDisplayThree(id, id2, id3, display1, display2, display3) {
     document.getElementById(id).style.display = display1;
     document.getElementById(id2).style.display = display2;
     document.getElementById(id3).style.display = display3;
 
 }
+//Backgroundcolor
 function styleBackgroundColorThree(id, id2, id3, color1, color2, color3) {
     document.getElementById(id).style.backgroundColor = color1;
     document.getElementById(id2).style.backgroundColor = color2;
@@ -49,11 +51,12 @@ function multiplePosition(answer, answer2, answer3, asnwer4, answer5) {
 
 
 }
-
+// Timeout
 function timeOut(id1, id2) {
     setTimeout(function () { document.getElementById(id1).style.display = "none"; document.getElementById(id2).style.display = "block"; }, 3000);
 }
 
+// Multiplication
 function multiplyButton() {
 
     document.getElementById("answer").innerHTML = "";
@@ -77,7 +80,7 @@ function multiplyButton() {
 
 
 }
-
+//Multiplication
 function multiplyCheck() {
     document.getElementById("error").innerHTML = "";
 
@@ -97,7 +100,7 @@ function multiplyCheck() {
     styleDisplayThree("multiRadio", "multiStartBtn", "checkMultiply", "none", "block", "none");
 
 }
-
+//Division
 function divideButton() {
 
     styleDisplayThree("divideTaskA", "divideTaskB", "divideTaskC", "none", "none", "none");
@@ -120,7 +123,7 @@ function divideButton() {
     styleDisplayThree("divideStartButton", "checkDivide", "divideAnswer", "none", "block", "block");
 
 }
-
+//Division
 function divideCheck() {
     let divideTaskA = Math.floor(430 / 60);
     let divideTaskB = Math.floor(1100 / 250);
@@ -133,7 +136,7 @@ function divideCheck() {
 
     document.getElementById("divideError").innerHTML = "";
 
-
+    //Division Error
     if (divideInputIsNaN == true || divideInput=="") {
 
         document.getElementById("divideError").innerHTML = "Vastauksen täytyy olla numero.";
@@ -171,13 +174,14 @@ function divideCheck() {
 
     styleDisplayThree("checkDivide", "divideAnswer", "divideStartButton", "none", "none", "block");
 }
+// 	percent
 function prosentButton() {
 
     document.getElementById("prosentTaskOne").style.display = "block";
     document.getElementById("prosentStartButton").style.display = "none";
     document.getElementById("prosentTaskThree").style.display="none";
 }
-
+//	percent
 function prosentTaskOneA() {
 
     styleBackgroundColorThree("prosentWrongA", "prosentRightB", "prosentWrongC", "red", "green", "red");
@@ -186,47 +190,51 @@ function prosentTaskOneA() {
 
 
 }
+//	percent
 function prosentTaskOneB() {// oikeas vastaus
     styleBackgroundColorThree("prosentWrongA", "prosentRightB", "prosentWrongC", "red", "green", "red");
     document.getElementById("prosentAnswerTaskOne").innerHTML = "Vastauksesi on oikein!";
     timeOut("prosentTaskOne", "prosentTaskTwo");
 
 }
+//	percent
 function prosentTaskOneC() {
     styleBackgroundColorThree("prosentWrongA", "prosentRightB", "prosentWrongC", "red", "green", "red");
     document.getElementById("prosentAnswerTaskOne").innerHTML = "Vastauksesi on väärin.";
     timeOut("prosentTaskOne", "prosentTaskTwo");
 }
-
+//	percent
 function prosentTaskTwoA() {
     styleBackgroundColorThree("prosentRightTwoA", "prosentWrongTwoB", "prosentWrongTwoC", "green", "red", "red");
     document.getElementById("prosentAnswerTaskTwo").innerHTML = "Vastauksesi on oikein!";
     timeOut("prosentTaskTwo", "prosentTaskThree");
 
 }
+//	percent
 function prosentTaskTwoB() {
     styleBackgroundColorThree("prosentRightTwoA", "prosentWrongTwoB", "prosentWrongTwoC", "green", "red", "red");
     document.getElementById("prosentAnswerTaskTwo").innerHTML = "Vastauksesi on Väärin.";
     timeOut("prosentTaskTwo", "prosentTaskThree");
 }
+//	percent
 function prosentTaskTwoC() {
     styleBackgroundColorThree("prosentRightTwoA", "prosentWrongTwoB", "prosentWrongTwoC", "green", "red", "red");
     document.getElementById("prosentAnswerTaskTwo").innerHTML = "Vastauksesi on väärin.";
     timeOut("prosentTaskTwo", "prosentTaskThree");
 }
-
+//	percent
 function prosentTaskThreeA() {
     styleBackgroundColorThree("prosentWrongThreeA", "prosentRightThreeB", "prosentWrongThreeC", "red", "green", "red");
     document.getElementById("prosentAnswerTaskThree").innerHTML = "Vastauksesi on väärin.";
     document.getElementById("prosentStartButton").style.display="block";
 }
-
+//	percent
 function prosentTaskThreeB() {
     styleBackgroundColorThree("prosentWrongThreeA", "prosentRightThreeB", "prosentWrongThreeC", "red", "green", "red");
     document.getElementById("prosentAnswerTaskThree").innerHTML = "Vastauksesi on oikein!";
     document.getElementById("prosentStartButton").style.display="block";
 }
-
+//	percent
 function prosentTaskThreeC() {
     styleBackgroundColorThree("prosentWrongThreeA", "prosentRightThreeB", "prosentWrongThreeC", "red", "green", "red");
     document.getElementById("prosentAnswerTaskThree").innerHTML = "Vastauksesi on väärin.";
