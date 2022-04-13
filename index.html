@@ -8,123 +8,99 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/style.css">
     <script src="https://kit.fontawesome.com/23abaa8a95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <img class="logo" src="/images/weppiprojo3.png" alt="logo">
-        </a>
-    </div>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Etusivu</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand">Web-Projekti Tiimi 11</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav  ms-1 ms-lg-5 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="tietoa.html">Tietoa</a>
+                        <a href="#" class="nav-link active" aria-current="page"><i
+                                class="fa-solid fa-house"></i>
+                            Pääsivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active"><i class="fa-solid fa-circle-info"></i> Tietoa</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOne" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-calculator"></i>
+                            Matikkapaketti
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOne">
+                            <li><a class="dropdown-item" href="#">1-3 luokkalaisille</a></li>
+                            <li><a class="dropdown-item" href="matikka46.html">4-6 luokkalaisille</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-atlas"></i>
+                            Tietovisa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Maantieto</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-2">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-1 pt-2 text-white min-vh-100">
-                    <a href="#"
-                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <i class="fa-solid fa-compass"></i>
-                        <span class="menu fs-5 d-sm-inline ">Menu</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fa-solid fa-house"></i> <span class="ms-1  d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="text-dark text-decoration-none">
-                                <i class="fa-solid fa-calculator"></i> <span
-                                    class="ms-1  d-sm-inline">Matikkapaketti</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="text-dark text-decoration-none "> <span
-                                            class="d-none d-sm-inline"></span>1-3 luokkalaiselle</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-dark text-decoration-none"> <span
-                                            class="d-none d-sm-inline"></span>4-6 luokkalaiselle</a>
-                                </li>
-                            </ul>
-                        </li>
+    <div class="container-fluid ">
+        <div class="row d-flex text-dark">
 
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="text-dark text-decoration-none">
-                                <i class="fa-solid fa-book-atlas"></i> <span
-                                    class="ms-1  d-sm-inline">Tietovisa</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="text-dark text-decoration-none"> <span
-                                            class="d-none d-sm-inline"></span>Maantieto</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-dark text-decoration-none"> <span
-                                            class="d-none d-sm-inline"></span>Historia</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="tausta col-12 position-relative min-vh-100">
+                <div class="transbox">
+                    <p class="text-center mx-5 py-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                        maxime explicabo adipisci fuga, earum beatae accusantium veritatis atque inventore ipsa magnam.
+                        Totam atque suscipit nihil autem, veritatis libero modi veniam.
+                    </p>
+                    <p class="text-center mx-5 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+                        veritatis unde similique? Cumque mollitia provident perferendis repellendus ullam, nemo illo
+                        alias sequi quo, in quia eos totam recusandae esse laudantium?</p>
+                    <p class="text-center mx-5 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+                        porro id aliquid possimus corrupti sint sapiente suscipit atque maxime debitis! Qui eveniet
+                        vitae esse modi eaque ipsum ratione in obcaecati.
+                    </p>
+                    <p class="text-center mx-5 py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+                        placeat maxime adipisci natus vitae sed, alias commodi doloribus provident velit repudiandae sit
+                        consectetur voluptates reiciendis eligendi maiores aperiam dolor delectus?</p>
+
+
+
+                </div>
+                <div>
+                    <img id="lapsetkoulussa" src="/image/etusivunkuva.jpg" class="rounded mx-auto d-block my-5"
+                        alt="lapset koulussa">
                 </div>
             </div>
-            <div class="col py-3 position-relative">
-                <div class="teksti">
-                    <p class="m-3">Tänne asiaa</p>
-                    <p class="m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit in laudantium doloribus
-                        libero architecto quae illum modi commodi enim voluptas, atque iusto necessitatibus eaque,
-                        alias, incidunt quisquam unde cumque soluta.Harum fuga molestiae eos asperiores aliquid error
-                        quasi, odio architecto,necessitatibus deleniti minus
-                        ipsum obcaecati quibusdam vero, quaerat nisi? Dolorem possimus cum nemo tempora temporibus
-                        obcaecati corporis reprehenderit aut perferendis.
-                        Delectus quibusdam nihil in numquam. Qui deserunt culpa maiores voluptatibus vero possimus
-                        accusamus, cupiditate tempora quasi omnis natus
-                        praesentium fuga ut repellendus temporibus recusandae, dolorem unde, officiis minima. Facilis,
-                        mollitia?</p>
-                </div>
-                <img class="d-none d-xl-block frontimg position-absolute top-25 start-50 translate-middle-x"
-                    src="images/etusivunkuva.jpg" alt="lapset koulussa">
-            </div>
+
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 bg-white ">
-                    <p class="text-center">jotain</p>
-                    <p class="text-center">jotain</p>
-                    <p class="text-center">jotain</p>
-                    
+        <div class="row row-cols-1  row-cols-md-3">
+            <div class="col bg-dark text-white">
+                <p class="text-center py-2 mt-2 fs-6">Tietojenkäsittelyn tutkinto-ohjelman (TIK22KM)</p>
             </div>
-    
-
-
+            <div class="col bg-dark text-white">
+                <p class="text-center py-2 mt-0 fs-6">Informaatioteknologia, Oamk</p>
+            </div>
+            <div class="col bg-dark text-white">
+                <p class="text-center py-2 mt-0 fs-6">Aloitus vuosi 2022</p>
+            </div>
         </div>
-
-
-
-
     </div>
-
-
-
-
-
 
 
 
