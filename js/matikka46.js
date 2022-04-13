@@ -180,6 +180,14 @@ function prosentButton() {
     document.getElementById("prosentTaskOne").style.display = "block";
     document.getElementById("prosentStartButton").style.display = "none";
     document.getElementById("prosentTaskThree").style.display="none";
+
+    document.getElementById("prosentAnswerTaskOne").innerHTML ="";
+    document.getElementById("prosentAnswerTaskTwo").innerHTML = "";
+    document.getElementById("prosentAnswerTaskThree").innerHTML = "";
+
+    styleBackgroundColorThree("prosentWrongA", "prosentRightB", "prosentWrongC", "white", "white", "white");
+    styleBackgroundColorThree("prosentRightTwoA", "prosentWrongTwoB", "prosentWrongTwoC", "white", "white", "white");
+    styleBackgroundColorThree("prosentWrongThreeA", "prosentRightThreeB", "prosentWrongThreeC", "white", "white", "white");
 }
 //	percent
 function prosentTaskOneA() {
