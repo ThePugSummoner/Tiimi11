@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/23abaa8a95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/matikka46style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand">Web-Projekti Tiimi 11</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-1 ms-lg-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page"><i
+                                class="fa-solid fa-house"></i>
+                            Pääsivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active"><i class="fa-solid fa-circle-info"></i> Tietoa</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOne" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-calculator"></i>
+                            Matikkapaketti
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOne">
+                            <li><a class="dropdown-item" href="#">1-3 luokkalaisille</a></li>
+                            <li><a class="dropdown-item" href="matikka46.html">4-6 luokkalaisille</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-atlas"></i>
+                            Tietovisa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Maantieto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid ">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 d-flex text-dark">
+
+            <div class="multiply col border border-primary min-vh-100">
+                <h1 class="text-center">Kertolasku</h1>
+
+                <p class="text-center">laske seuraava kertolasku ja valitse alta oikea vaihtoehto</p>
+
+                <button id="multiStartBtn" onclick="multiplyButton()">Aloita lasku</button>
+
+                <p><span id="multiNumbers"></span></p>
+
+                <form id="multiRadio">
+                    <input type="radio" id="multiInputA" name="multiply" value="1" checked onclick="answerCheck(1)">
+                    <label for="multiInputA"><span id="multiAnswerA"></span></label><br>
+
+                    <input type="radio" id="multiInputB" name="multiply" value="2" checked onclick="answerCheck(2)">
+                    <label for="multiInputB"><span id="multiAnswerB"></span></label><br>
+
+                    <input type="radio" id="multiInputC" name="multiply" value="3" checked onclick="answerCheck(3)">
+                    <label for="multiInputC"><span id="multiAnswerC"></span></label><br>
+
+                    <input type="radio" id="multiInputD" name="multiply" value="4" checked onclick="answerCheck(4)">
+                    <label for="multiInputD"><span id="multiAnswerD"></span></label><br>
+
+                    <input type="radio" id="multiInputE" name="multiply" value="5" checked onclick="answerCheck(5)">
+                    <label for="multiInputE"><span id="multiAnswerE"></span></label><br>
+
+
+                </form>
+                <p><span id="answer"></span></p>
+                <p><span id="error"></span></p>
+                <button onclick="multiplyCheck()" id="checkMultiply"> Tarkista vastaus</button>
+
+
+
+
+            </div>
+            <div class="divide col border border-primary min-vh-100">
+                <h1 class="text-center">Jakolasku</h1>
+                <p>Alla näet sanallisia jakolaskuja. Laske laskut ja anna pelkkä vastaus vastauskenttään.</p>
+                <button id="divideStartButton" onclick="divideButton()">Aloita lasku</button>
+
+                <section id="divideTaskA">
+                    <p>Seinän leveys on 430 cm, kuinka monta tapettivuotaa tarvitaan yhteen seinään,
+                        kun vuodan leveys on 60 cm? Vuota tarkoittaa rullan levyistä, katosta lattiaan asti ylettyvää
+                        tapetin palaa.</p>
+                        
+                    
+
+                </section>
+                <section id="divideTaskB">
+                    <p>Seinän leveys on 430 cm, huonekorkeus on 250 cm. Vuota tarkoittaa rullan
+                        levyistä, katosta lattiaan asti ylettyvää tapetin palaa. Kuinka monta vuotaa saadaan yhdestä
+                        tapettirullasta, kun yhdessä rullassa on 11 metriä?</p>
+                       
+                </section>
+                <section id="divideTaskC">
+                    <p>Miehellä on käytössään 876 euroa. Hän halusi palkata mahdollisimman monta
+                        koululaista kesätöihin puutarhaansa viideksi päiväksi, juhannusviikolle. Palkkaa hän lupasi
+                        maksaa 150 € kullekin koululaiselle. Kuinka monta koululaista mies pystyi palkkaamaan?</p>
+
+                        
+                </section>
+                <span id="divideError"></span>
+                <label for="divideAnswer"></label><br>
+                        <input type="text" id="divideAnswer">
+                <button id="checkDivide" onclick="divideCheck()">Tarkista vastaus</button>
+                <p><span id="divideAsnwerCheck"></span></p>
+
+
+            </div>
+            <div class="tausta col border border-primary min-vh-100">
+                <h1 class="text-center">Sanalliset yllärit</h1>
+                <p></p>
+
+
+
+            </div>
+            <div class="tausta col border border-primary min-vh-100">
+                <h1 class="text-center">Prosenttilaskut</h1>
+                <p>Alla näet sanallisia prosenttilaskuja.Valitse oikea vastaus vaihtoehdoista.</p>
+                <button id="prosentStartButton" onclick="prosentButton()">Aloita lasku</button>
+                
+                <section id="prosentTaskOne">
+                <p>120 euroa maksavat kottikärryt myydään 40%:n alennuksella . Kuinka monta euroa alennus on?</p>
+                <input id="prosentWrongA" type="button" onclick="prosentTaskOneA()" value="40e"><br>
+                <input id="prosentRightB" type="button" onclick="prosentTaskOneB()" value="48e"><br>
+                <input id="prosentWrongC" type="button" onclick="prosentTaskOneC()"value="72e"><br>
+
+                    <p><span id="prosentAnswerTaskOne"></span></p>
+             </section>
+
+             <section id="prosentTaskTwo">
+                 <p> Kymmenen euron aurinkolasit myydään 25%:n alennuksella. Kuinka monta euroa on alennus?</p>
+                 <input id="prosentRightTwoA"type="button" onclick="prosentTaskTwoA()"value="2,5e"><br>
+                 <input id="prosentWrongTwoB" type="button" onclick="prosentTaskTwoB()"value="4e"><br>
+                 <input id="prosentWrongTwoC"type="button" onclick="prosentTaskTwoC()"value="7,5e"><br>
+                 <p><span id="prosentAnswerTaskTwo"></span></p>
+
+             </section>
+
+             <section id="prosentTaskThree">
+                 <p>sadan euron musiikkisoittimesta saa 20 prosenttia alennusta. Kuinka paljon on alennus ja mikä on tuotteen alennettu hinta?</p>
+                 <input id="prosentWrongThreeA" type="button" onclick="prosentTaskThreeA()"value="10e alennusta ja alennettu hinnta 90e"><br>
+                 <input id="prosentRightThreeB" type="button" onclick="prosentTaskThreeB()"value="20e alennusta ja alennettu hinta 80e"><br>
+                 <input id="prosentWrongThreeC" type="button" onclick="prosentTaskThreeC()"value="5e alennusta ja alennettu hunta 75e"><br>
+                 <p><span id="prosentAnswerTaskThree"></span></p>
+
+             </section>
+
+
+
+            </div>
+            <div class="tausta col border border-primary min-vh-100">
+                <h1 class="text-center">vähennyslasku</h1>
+                <p></p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row row-cols-1  row-cols-md-3">
+            <div class="col bg-dark text-white">
+                <p class="text-center py-2 mt-2 fs-6">Tietojenkäsittelyn tutkinto-ohjelman (TIK22KM)</p>
+            </div>
+            <div class="col bg-dark text-white">
+                <p class="text-center py-2 mt-0 fs-6">Informaatioteknologia, Oamk</p>
+            </div>
+            <div class="col bg-dark text-white">
+                <p class="text-center py-2 mt-0 fs-6">Aloitus vuosi 2022</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/js/matikka46.js"></script>
+</body>
+
+</html>
