@@ -1,95 +1,23 @@
-*{
-    color: black;
-}
-.container{
-    text-align: left;
-    background-color: white;
-    margin-left: 0;
-    margin-right: 0;
-}
-.navbar-brand{
-    color: orange;
-}
-.nav-link{
-    color: orange;
-}
-.navbar{
-    background-color:black;
 
-}
-[class="navbar-toggler"]{
-border: white 1px solid;
-border-radius: 10px;
-
-
-}
-[class="fa-solid fa-bars"]{
-    color: white;
-}
-
-
-.container-fluid a:hover{
-    display: block;
-    background-color: #db9718;
-   
-    
-}
-.logo{
-    position: relative;
-    background-color:transparent;
-    width: 300px;
-    height: 100px;
-    margin: 10px;
-    
-}
-.col-auto{
-    background-color: #ffa500;    
-}
-
-
-.col-auto a:hover{
-    display: block;
-    background-color: #db9718;
-    border-radius: 10px;
-    width: 200px;
-    border: black 1px solid;
-      
-}
-
-[class*="col py-3"]{
+div.tausta{
     background-image: url(/images/back-to-school-gfe6472cd4_1920.jpg);
+    background-size: cover;
     
-    
-    
-}
-.teksti{
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    
-}
-.teksti p {
-    font-weight: bold;
-    color: black;
+   
 }
 
-.frontimg {
-    height: 60%;
+#lapsetkoulussa{
+    height: 47.5%;
     width: 50%;
+    
 }
-@media screen and (max-width: 650px) {
-
-.col-auto:hover{
-    width: 180px;
+.transbox{
+    margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
 }
-.col-auto span:hover{
-    width: 150px;
-}
-.col-auto a:hover{
-    display: block;
-    background-color: #db9718;
-    width: 150px;
-             
-    } 
+.transbox p {
+  font-weight: bold;
+  color: #000000;
 }
