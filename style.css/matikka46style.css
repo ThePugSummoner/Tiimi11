@@ -94,6 +94,11 @@ div.tausta input {
 
 #loading {
     display: none;
+    font-size: 1.5em;
+    font-family: 'Permanent Marker';
+}
+#loading p{
+    color:rgb(255, 198, 42);
 }
 
 #loppuArvio {
@@ -107,7 +112,7 @@ div.tausta input {
     font-size: 1.3em;
     background-color: #a02fd8;
     height: 50%;
-    width: 35%;
+    width: 40%;
     margin: 0;
     padding-top: 10px;
     padding-left: 15px;
@@ -253,6 +258,7 @@ div.tausta input {
     .inputField {
         background-size: 100% 70%;
         font-size: 1em;
+        width: 65%;
 
     }
 
@@ -272,38 +278,39 @@ div.tausta input {
     #percenTask {
         background-size: 100% 65%;
         height: 30%;
-        width: 50%;
+        
     }
 
     #divideTask {
         background-size: 100% 60%;
         height: 35%;
-        width: 60%;
+        
     }
 
     #multiplicationTask {
         background-size: 100% 75%;
         height: 30%;
-        width: 45%;
+        
 
     }
 
     #verbalTask {
         background-size: 100% 65%;
         height: 33%;
-        width: 65%;
+        
     }
 
     #circleTask {
         background-size: 100% 65%;
         height: 33%;
-        width: 58%;
+        
     }
 
     #loppuArvio {
         font-size: 1.2em;
         height: 45%;
         width: 60%;
+        
     }
 
     #newStart {
@@ -322,6 +329,7 @@ div.tausta input {
     .inputField {
         background-size: 100% 70%;
         font-size: 1em;
+        width: 70%;
 
     }
 
@@ -333,45 +341,48 @@ div.tausta input {
     }
 
     .introText {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
 
 
     #percenTask {
-        background-size: 100% 65%;
-        height: 30%;
-        width: 55%;
+        background-size: 100% 54%;
+        height: 35%;
+        
     }
 
     #divideTask {
-        background-size: 100% 50%;
-        height: 38%;
-        width: 70%;
+        background-size: 100% 45%;
+        
+        height: 43%;
+        
     }
 
     #multiplicationTask {
         background-size: 100% 75%;
         height: 30%;
-        width: 50%;
+        
     }
 
     #verbalTask {
-        background-size: 100% 60%;
-        height: 35%;
-        width: 70%;
+        background-size: 100% 49%;
+        
+        height: 40%;
+        
     }
 
     #circleTask {
-        background-size: 100% 60%;
-        height: 35%;
-        width: 63%;
+        background-size: 100% 50%;
+        height: 40%;
+       
     }
 
     #loppuArvio {
         font-size: 1.2em;
         height: 45%;
-        width: 60%;
+        width: 70%;
+        
     }
 
     #newStart {
@@ -390,6 +401,7 @@ div.tausta input {
     .inputField {
         background-size: 100% 70%;
         font-size: 1em;
+        width: 70%;
     }
 
     .answerText {
@@ -405,31 +417,31 @@ div.tausta input {
         background-size: 100% 60%;
 
         height: 30%;
-        width: 70%;
+        
     }
 
     #divideTask {
         background-size: 100% 60%;
         height: 45%;
-        width: 75%;
+        
     }
 
     #multiplicationTask {
         background-size: 100% 73%;
         height: 30%;
-        width: 60%;
+        
     }
 
     #verbalTask {
         background-size: 100% 55%;
         height: 35%;
-        width: 75%;
+        
     }
 
     #circleTask {
         background-size: 100% 55%;
         height: 35%;
-        width: 75%;
+        
     }
 
     #loppuArvio {
@@ -451,8 +463,9 @@ div.tausta input {
 
 @media screen and (max-width: 600px) {
     .inputField {
-        background-size: 100% 70%;
+        
         font-size: 1em;
+        width: 70%;
     }
 
     .answerText {
@@ -461,48 +474,55 @@ div.tausta input {
     }
 
     .introText {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     #percenTask {
         background-size: 100% 55%;
+        font-size: 0.9em;
         height: 35%;
-        width: 60%;
+        
     }
 
     #divideTask {
-        background-size: 100% 45%;
+        background-size: 100% 38%;
+        font-size: 0.9em;
         height: 45%;
-        width: 75%;
+        
     }
 
     #multiplicationTask {
         background-size: 100% 73%;
         height: 30%;
-        width: 60%;
+       
     }
 
     #verbalTask {
         background-size: 100% 50%;
-        height: 35%;
-        width: 75%;
+        font-size: 0.9em;
+        height: 38%;
+        
     }
 
     #circleTask {
-        background-size: 100% 53%;
+        background-size: 100% 50%;
+        font-size: 0.9em;
         height: 35%;
-        width: 75%;
+        
     }
 
     #loppuArvio {
         font-size: 1.1em;
         height: 45%;
-        width: 75%;
+        
     }
 
     #newStart {
         left: 55%;
         top: 55%;
+    }
+    #loading {
+        font-size: 1em;
     }
 
     .custom-shape-divider-bottom-1650785033 svg {

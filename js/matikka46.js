@@ -269,6 +269,7 @@ function taskStartButton() {
     document.getElementById("percenTask").style.display = "block";
     document.getElementById("startButton").style.display = "none";
     document.getElementById("loppuArvio").style.display = "none";
+    document.querySelector(".introText").style.display="block";
 
     document.getElementById("imgRewardHere").innerHTML = "";
 
@@ -406,6 +407,7 @@ function circle(event) {
     buttonDisableEnable("circleA", "circleB", "circleC", true, true, true);
     document.getElementById("correctAnswers").innerHTML = rightAnswers.length;
     rewardImg();
+    document.querySelector(".introText").style.display="none";
     timeOut("circleTask", "loading", 3000);
     timeOut("loading", "loppuArvio", 13000);
 
