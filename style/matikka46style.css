@@ -9,38 +9,49 @@ h1 {
 }
 
 
+
 .inputField {
     background-image: url(../image/abstract-g47b9c359c_1280.png);
     color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-position: left bottom;
+    position: absolute;
     background-size: 100% 70%;
     background-color: #a02fd8;
     border: black 1px solid;
     border-radius: 10px;
-    font-size: 1.5rem;
-    height: 33%;
-    width: 40%;
-    margin: 10px;
-    padding: 10px;
+    font-size: 0.8em;
+    width: 75%;
+    margin: 5px;
+    padding: 5px;
+    left: 50%;
+    top: 65%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
 
 }
 
+
 .introText {
-    font-size: 1.2rem;
+    
+    font-size: 1em;
+    margin-top: 0;
+    
 
 
 }
 
 .answerText {
     color: #FFFFFF;
-    font-size: 1.5rem;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
 #percenTask {
-    background-size: 100% 63%;
+    background-size: 100% 60%;
     display: none;
+    height: 40%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -51,8 +62,9 @@ h1 {
     background-image: url(../image/abstract-g47b9c359c_1280.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 100% 53%;
+    background-size: 100% 44%;
     display: none;
+    font-size: 0.7em;
     height: 50%;
     animation-name: example;
     animation-duration: 2s;
@@ -61,6 +73,7 @@ h1 {
 
 #multiplicationTask {
     display: none;
+    
     background-size: 100% 75%;
     animation-name: example;
     animation-duration: 2s;
@@ -70,8 +83,8 @@ h1 {
 
 #verbalTask {
     display: none;
-    background-size: 100% 60%;
-    height: 40%;
+    background-size: 100% 48%;
+    height: 45%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -80,8 +93,8 @@ h1 {
 
 #circleTask {
     display: none;
-    background-size: 100% 60%;
-    height: 40%;
+    background-size: 100% 48%;
+    height: 45%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -98,30 +111,28 @@ div.tausta input {
 
 #loading {
     display: none;
-    font-size: 1.5em;
+    font-size: 0.7em;
     font-family: 'Permanent Marker';
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
 }
 
 #loading p {
     color: rgb(255, 198, 42);
+    font-size: 1.5em;
 }
 
 #loppuArvio {
     display: none;
-    background-image: url(../image/abstract-g47b9c359c_1280.png);
     font-family: 'Permanent Marker';
     color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: 100% 100%;
-    font-size: 1.3em;
+    font-size: 0.8em;
     background-color: #a02fd8;
-    height: 50%;
-    width: 40%;
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
     border: #71219a 5px solid;
     border-radius: 10%;
     animation: example 6s forwards;
@@ -165,7 +176,7 @@ div.tausta input {
     position: relative;
     display: block;
     width: calc(160% + 1.3px);
-    height: 234px;
+    height: 50px;
     /*https://www.shapedivider.app/*/
 }
 
@@ -181,8 +192,8 @@ div.tausta input {
 
 .imgreward {
 
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border: black 3px solid;
     border-radius: 50%;
 
@@ -215,9 +226,9 @@ div.tausta input {
 
 #newStart {
     position: absolute;
-    height: 75px;
-    left: 35%;
-    top: 70%;
+    height: 50px;
+    left: 55%;
+    top: 65%;
     border-radius: 10%;
     border: black 2px solid;
 
@@ -240,7 +251,7 @@ div.tausta input {
 
 
 .elements div:nth-child(2) {
-    top: 55%;
+    top: 95%;
     left: 10%;
     width: 90px;
     height: 90px;
@@ -248,20 +259,42 @@ div.tausta input {
 }
 
 .elements div:nth-child(3) {
-    top: 65%;
-    left: 75%;
-    width: 100px;
-    height: 100px;
-    animation: ball 8s linear infinite;
+    top: 95%;
+    left: 65%;
+    width: 70px;
+    height: 70px;
+    animation: ball 7s linear infinite;
 }
 .elements div:nth-child(4) {
     top: 15%;
-    left: 70%;
-    width: 100px;
-    height: 100px;
+    left: 65%;
+    width: 80px;
+    height: 80px;
     animation: ball 7s linear infinite;
 }
 
+
+.custom-shape-divider-bottom-1650782958 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 277px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 .shape-fill {
+    fill: #FFFFFF;
+}
 
 @keyframes ball{
 
@@ -299,306 +332,315 @@ div.tausta input {
     }
 }
 
-.custom-shape-divider-bottom-1650782958 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1650782958 svg {
-    position: relative;
-    display: block;
-    width: calc(145% + 1.3px);
-    height: 277px;
-    transform: rotateY(180deg);
-}
 
-.custom-shape-divider-bottom-1650782958 .shape-fill {
-    fill: #FFFFFF;
-}
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 450px){
 
+    h1 {
+        font-size: 3em;
+    }
+    
+    
+    
     .inputField {
         background-size: 100% 70%;
         font-size: 1em;
-        width: 65%;
-
-    }
-
-    .answerText {
-
-        font-size: 1.5em;
-        font-weight: 500;
-
-    }
-
-    .introText {
-        font-size: 1em;
-    }
-
-
-
-    #percenTask {
-        background-size: 100% 65%;
-        height: 30%;
-
-    }
-
-    #divideTask {
-        background-size: 100% 60%;
-        height: 35%;
-
-    }
-
-    #multiplicationTask {
-        background-size: 100% 75%;
-        height: 30%;
-
-
-    }
-
-    #verbalTask {
-        background-size: 100% 65%;
-        height: 33%;
-
-    }
-
-    #circleTask {
-        background-size: 100% 65%;
-        height: 33%;
-
-    }
-
-    #loppuArvio {
-        font-size: 1.2em;
-        height: 45%;
-        width: 60%;
-
-    }
-
-    #newStart {
-        left: 35%;
-        top: 70%;
-    }
-
-    .custom-shape-divider-bottom-1650785033 svg {
-        height: 200px;
-        /*https://www.shapedivider.app/*/
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-    .inputField {
-        background-size: 100% 70%;
-        font-size: 1em;
-        width: 70%;
-
-    }
-
-    .answerText {
-
-        font-size: 1.5em;
-        font-weight: 500;
-
-    }
-
-    .introText {
-        font-size: 1.2em;
-    }
-
-
-
-    #percenTask {
-        background-size: 100% 54%;
-        height: 35%;
-
-    }
-
-    #divideTask {
-        background-size: 100% 45%;
-
-        height: 43%;
-
-    }
-
-    #multiplicationTask {
-        background-size: 100% 75%;
-        height: 30%;
-
-    }
-
-    #verbalTask {
-        background-size: 100% 49%;
-
-        height: 40%;
-
-    }
-
-    #circleTask {
-        background-size: 100% 50%;
-        height: 40%;
-
-    }
-
-    #loppuArvio {
-        font-size: 1.2em;
-        height: 45%;
-        width: 70%;
-
-    }
-
-    #newStart {
-        left: 35%;
-        top: 70%;
-    }
-
-    .custom-shape-divider-bottom-1650785033 svg {
-        height: 200px;
-        /*https://www.shapedivider.app/*/
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    .inputField {
-        background-size: 100% 70%;
-        font-size: 1em;
-        width: 70%;
-    }
-
-    .answerText {
-        font-size: 1.5em;
-        font-weight: 500;
-    }
-
-    .introText {
-        font-size: 1em;
-    }
-
-    #percenTask {
-        background-size: 100% 60%;
-
-        height: 30%;
-
-    }
-
-    #divideTask {
-        background-size: 100% 60%;
-        height: 45%;
-
-    }
-
-    #multiplicationTask {
-        background-size: 100% 73%;
-        height: 30%;
-
-    }
-
-    #verbalTask {
-        background-size: 100% 55%;
-        height: 35%;
-
-    }
-
-    #circleTask {
-        background-size: 100% 55%;
-        height: 35%;
-
-    }
-
-    #loppuArvio {
-        font-size: 1.2em;
-        height: 45%;
         width: 75%;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
     }
-
-    #newStart {
-        height: 75px;
-        left: 35%;
-        top: 70%;
-    }
-
-    .custom-shape-divider-bottom-1650785033 svg {
-        height: 180px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .inputField {
-
-        font-size: 1em;
-        width: 70%;
-    }
-
-    .answerText {
-        font-size: 1.5em;
-        font-weight: 500;
-    }
-
+    
+    
     .introText {
+        
+        font-size: 1.2em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
         font-size: 1.1em;
     }
-
+    
     #percenTask {
-        background-size: 100% 55%;
-        font-size: 0.9em;
-        height: 35%;
-
+        background-size: 100% 60%;
+        height: 33%;
+       
     }
-
+    
     #divideTask {
-        background-size: 100% 38%;
-        font-size: 0.9em;
-        height: 45%;
 
+        background-size: 100% 34%;
+        font-size: 1em;
+        height: 51%;
     }
-
+    
     #multiplicationTask {
-        background-size: 100% 73%;
-        height: 30%;
-
+        background-size: 100% 75%;
+    
     }
-
+    
     #verbalTask {
-        background-size: 100% 50%;
-        font-size: 0.9em;
+        background-size: 100% 41%;
+        height: 40%;
+    }
+    
+    #circleTask {
+        display: none;        background-size: 100% 46%;
         height: 38%;
 
+    
+    }
+    
+    
+    div.tausta input {
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
+    }
+    
+    #loading {
+        font-size: 1.2em;
+        top: 60%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1em;
+        height: 35%;    
     }
 
+    
+
+    
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 150px;
+    }
+    .imgreward {
+    
+        height: 125px;
+        width: 125px;
+        border: black 3px solid;
+        border-radius: 50%;
+    
+    }
+
+    
+    #newStart {
+        height: 65px;
+        left: 55%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 5%;
+        width: 80px;
+        height: 80px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 95%;
+        left: 10%;
+        width: 90px;
+        height: 90px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 95%;
+        left: 65%;
+        width: 70px;
+        height: 70px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 15%;
+        left: 65%;
+        width: 80px;
+        height: 80px;
+
+    }
+  
+  
+
+}
+@media screen and (min-width: 530px){
+
+    h1 {
+        font-size: 4em;
+    }
+    
+    
+    
+    .inputField {
+        background-size: 100% 70%;
+        font-size: 1em;
+        width: 75%;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+    }
+    
+    
+    .introText {
+        
+        font-size: 1.3em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
+        font-size: 1.3em;
+    }
+    
+    #percenTask {
+        background-size: 100% 57%;
+        height: 33%;
+       
+    }
+    
+    #divideTask {
+
+        background-size: 100% 39%;
+        font-size: 1em;
+        height: 48%;
+    }
+    
+    #multiplicationTask {
+        background-size: 100% 75%;
+    
+    }
+    
+    #verbalTask {
+        background-size: 100% 42%;
+        height: 38%;
+    }
+    
     #circleTask {
-        background-size: 100% 50%;
-        font-size: 0.9em;
+        display: none;        
+        background-size: 100% 48%;
         height: 35%;
 
+    
     }
-
-    #loppuArvio {
-        font-size: 1.1em;
-        height: 45%;
-
+    
+    
+    div.tausta input {
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
     }
-
-    #newStart {
-        left: 55%;
-        top: 55%;
-    }
-
+    
     #loading {
-        font-size: 1em;
+        font-size: 1.em;
+        top: 60%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1.1em;
+        height: 35%;    
     }
 
+    
+
+    
     .custom-shape-divider-bottom-1650785033 svg {
-        height: 180px;
-        /*https://www.shapedivider.app/*/
+        height: 150px;
     }
+    .imgreward {
+    
+        height: 125px;
+        width: 125px;
+        border: black 3px solid;
+        border-radius: 50%;
+    
+    }
+
+    
+    #newStart {
+        height: 65px;
+        left: 35%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 5%;
+        width: 80px;
+        height: 80px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 95%;
+        left: 10%;
+        width: 90px;
+        height: 90px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 95%;
+        left: 65%;
+        width: 70px;
+        height: 70px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 15%;
+        left: 65%;
+        width: 80px;
+        height: 80px;
+
+    }
+  
+  
+
 }
+
 
 
 

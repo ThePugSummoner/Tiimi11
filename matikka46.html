@@ -63,74 +63,77 @@
     </nav>
     <div class="tausta container-fluid ">
         <div class="row row-cols-3 d-flex text-dark">
-            <div class="col-12  position-relative  min-vh-100">
+            <div class="col-12  min-vh-100">
 
                 <h1 class="text-center">Matikka pähkinät</h1>
-                <p class="text-center mb-4 p-4 introText">Alla näet erilaisia laskuja. Valitse vaihtoehdoista vastaus.
-                    Tehtäviä on yhteensä 5kpl ja alla näet mones tehtävä on menossa.<br> <span id="counter">0</span>/ 5
-                </p>
+                <p id="pText" class="text-center mb-4 p-4 introText">Alla näet erilaisia laskuja. Valitse vaihtoehdoista vastaus.
+                    Tehtäviä on yhteensä 5kpl ja alla näet mones tehtävä on menossa.</p> 
+                    <p class="text-center"><span id="counter">0</span>/ 5</span></p>
+                
                 <button id="startButton" class="position-absolute top-25 start-50 translate-middle">Aloita
                     laskut</button>
 
-                <section id="percenTask" class="position-absolute top-50 start-50 translate-middle inputField">
-                    
+                <div id="percenTask" class="inputField">
+
                     <p class="text-center introText"><span id="price"></span> euroa maksavat kottikärryt myydään <span
                             id="percent"></span>%:n alennuksella . Kuinka monta euroa alennus on?</p>
 
-                    <input id="percentA" type="button" value=""><br>
-                    <input id="percentB" type="button" value=""><br>
-                    <input id="percentC" type="button" value=""><br>
+                    <input id="percentA" type="button" value="0"><br>
+                    <input id="percentB" type="button" value="0"><br>
+                    <input id="percentC" type="button" value="0"><br>
 
                     <p class="text-center answerText"><span id="percentAnswerText"></span></p>
-              
-                </section>
 
-                <section id="divideTask" class="position-absolute top-50 start-50 translate-middle inputField">
+                </div>
+
+                <div id="divideTask" class="inputField">
                     <p class="text-center mx-1 introText">Miehellä on käytössään <span id="priceDivide"></span> euroa.
                         Hän halusi palkata mahdollisimman monta
                         koululaista kesätöihin puutarhaansa viideksi päiväksi, juhannusviikolle. Palkkaa hän lupasi
                         maksaa <span id="moneyAmount"></span> € kullekin koululaiselle. Kuinka monta koululaista mies
                         pystyi palkkaamaan?</p>
-                    <input id="divideA" type="button" value=""><br>
-                    <input id="divideB" type="button" value=""><br>
-                    <input id="divideC" type="button" value=""><br>
+                        
+                    <input id="divideA" type="button" value="0"><br>
+                    <input id="divideB" type="button" value="0"><br>
+                    <input id="divideC" type="button" value="0"><br>
+                   
                     <p class="text-center answerText"><span id="divideAnswerText"></span></p>
 
-                </section>
+                </div>
 
-                <section id="multiplicationTask" class="position-absolute top-50 start-50 translate-middle inputField">
+                <div id="multiplicationTask" class="inputField">
                     <p class="text-center introText">laske <span id="MultiplicationNumber"></span> x <Span
                             id="MultiplicationNumberTwo"></Span></p>
-                    <input id="multiplicationA" type="button" value=""><br>
-                    <input id="multiplicationB" type="button" value=""><br>
-                    <input id="multiplicationC" type="button" value=""><br>
+                    <input id="multiplicationA" type="button" value="0"><br>
+                    <input id="multiplicationB" type="button" value="0"><br>
+                    <input id="multiplicationC" type="button" value="0"><br>
                     <p class="text-center answerText"><span id="multiplicationAnswerText"></span></p>
 
-                </section>
+                </div>
 
-                <section id="verbalTask" class="position-absolute top-50 start-50 translate-middle inputField">
+                <div id="verbalTask" class="inputField">
                     <p class="text-center introText"> Markkulanmäen rivitalossa asuu neljä perhettä joissa kaikissa on
                         <span id="personsInFamily"></span> henkilöä ja kaksi perhettä joissa kummassakin on <span
                             id="personsInFamilyTwo"></span> henkilöä Kuinka monta henkilöä sinisessä talossa asuu.
                     </p>
-                    <input id="verbalA" type="button" value=""><br>
-                    <input id="verbalB" type="button" value=""><br>
-                    <input id="verbalC" type="button" value=""><br>
+                    <input id="verbalA" type="button" value="0"><br>
+                    <input id="verbalB" type="button" value="0"><br>
+                    <input id="verbalC" type="button" value="0"><br>
                     <p class="text-center answerText"><span id="verbalAnswerText"></span></p>
 
-                </section>
+                </div>
 
-                <section id="circleTask" class="position-absolute top-50 start-50 translate-middle inputField">
+                <div id="circleTask" class="inputField">
                     <p class="text-center introText"> Markku juoksee ympyrän muotoisella radalla kilpaa, jonka piiri on
                         800m Kuinka pitkän matkan hän juoksisi, jos hän juoksisi <span id="meters"></span> metrin
                         kauhempana sisäreunasta? </p>
-                    <input id="circleA" type="button" value=""><br>
-                    <input id="circleB" type="button" value=""><br>
-                    <input id="circleC" type="button" value=""><br>
+                    <input id="circleA" type="button" value="0"><br>
+                    <input id="circleB" type="button" value="0"><br>
+                    <input id="circleC" type="button" value="0"><br>
                     <p class="text-center answerText"><span id="circleAnswerText"></span></p>
 
-                </section>
-                <section id="loading" class="position-absolute top-50 start-50 translate-middle">
+                </div>
+                <div id="loading">
 
 
                     <h1 data-text="Loading......">Loading......</h1><br>
@@ -138,9 +141,9 @@
                     <p>Koulutetut hamsterimme ratkovat pähkinöitäsi.<br> Siis vastauksiasi....</p>
 
 
-                </section>
+                </div>
 
-                <div id="loppuArvio" class="position-absolute top-50 start-50 translate-middle">
+                <div id="loppuArvio" class="inputField">
                     <div id="imageRewards">
                         <p class="text-center"><span id="rewardsText"></span><br>
                             Sait oikein <span id="correctAnswers"></span>/5.<br>
@@ -163,8 +166,8 @@
                         <div></div>
                         <div></div>
                         <div></div>
-                        
-                        
+
+
 
                     </div>
 
@@ -178,7 +181,7 @@
 
         </div>
     </div>
-    <section id="bottomtausta">
+    <div id="bottomtausta">
         <div class="custom-shape-divider-bottom-1650785033">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -187,7 +190,7 @@
                     class="shape-fill"></path>
             </svg>
         </div>
-    </section>
+    </div>
 
 
     <div class="container-fluid">
