@@ -1,15 +1,6 @@
-.disabledbutton {
-    pointer-events: none;
-    opacity: 0.4;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.tausta {
-    background-image: url(../image/tausta.png);
-    background-size: cover;
+    background: linear-gradient(to right, rgb(224, 119, 5), rgb(244, 88, 244));
 }
 
 h1 {
@@ -50,9 +41,10 @@ h1 {
 #percenTask {
     background-size: 100% 63%;
     display: none;
-
-
-
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+   
 }
 
 #divideTask {
@@ -62,11 +54,17 @@ h1 {
     background-size: 100% 53%;
     display: none;
     height: 50%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 #multiplicationTask {
     display: none;
     background-size: 100% 75%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 
 }
 
@@ -74,6 +72,9 @@ h1 {
     display: none;
     background-size: 100% 60%;
     height: 40%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 
 }
 
@@ -81,6 +82,9 @@ h1 {
     display: none;
     background-size: 100% 60%;
     height: 40%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 
 }
 
@@ -97,8 +101,9 @@ div.tausta input {
     font-size: 1.5em;
     font-family: 'Permanent Marker';
 }
-#loading p{
-    color:rgb(255, 198, 42);
+
+#loading p {
+    color: rgb(255, 198, 42);
 }
 
 #loppuArvio {
@@ -119,6 +124,9 @@ div.tausta input {
     padding-right: 15px;
     border: #71219a 5px solid;
     border-radius: 10%;
+    animation: example 6s forwards;
+   
+    
 }
 
 #loading h1 {
@@ -216,8 +224,57 @@ div.tausta input {
 
 }
 
+.elements div {
+    position: absolute;
+    background: transparent;
+    border: black 6px solid;
+}
+
+.elements div:nth-child(1) {
+    top: 20%;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+    animation: ball 10s linear infinite;
+}
 
 
+.elements div:nth-child(2) {
+    top: 55%;
+    left: 10%;
+    width: 90px;
+    height: 90px;
+    animation: ball 9s linear infinite;
+}
+
+.elements div:nth-child(3) {
+    top: 65%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+    animation: ball 8s linear infinite;
+}
+.elements div:nth-child(4) {
+    top: 15%;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation: ball 7s linear infinite;
+}
+
+
+@keyframes ball{
+
+    0%{
+        transform: scale(0) translateY(-90px) rotate(360deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90) rotate(-180deg);
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
 
 @keyframes animate {
 
@@ -230,6 +287,16 @@ div.tausta input {
     }
 
 
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .custom-shape-divider-bottom-1650782958 {
@@ -253,6 +320,7 @@ div.tausta input {
 .custom-shape-divider-bottom-1650782958 .shape-fill {
     fill: #FFFFFF;
 }
+
 @media screen and (max-width: 1200px) {
 
     .inputField {
@@ -278,39 +346,39 @@ div.tausta input {
     #percenTask {
         background-size: 100% 65%;
         height: 30%;
-        
+
     }
 
     #divideTask {
         background-size: 100% 60%;
         height: 35%;
-        
+
     }
 
     #multiplicationTask {
         background-size: 100% 75%;
         height: 30%;
-        
+
 
     }
 
     #verbalTask {
         background-size: 100% 65%;
         height: 33%;
-        
+
     }
 
     #circleTask {
         background-size: 100% 65%;
         height: 33%;
-        
+
     }
 
     #loppuArvio {
         font-size: 1.2em;
         height: 45%;
         width: 60%;
-        
+
     }
 
     #newStart {
@@ -349,40 +417,40 @@ div.tausta input {
     #percenTask {
         background-size: 100% 54%;
         height: 35%;
-        
+
     }
 
     #divideTask {
         background-size: 100% 45%;
-        
+
         height: 43%;
-        
+
     }
 
     #multiplicationTask {
         background-size: 100% 75%;
         height: 30%;
-        
+
     }
 
     #verbalTask {
         background-size: 100% 49%;
-        
+
         height: 40%;
-        
+
     }
 
     #circleTask {
         background-size: 100% 50%;
         height: 40%;
-       
+
     }
 
     #loppuArvio {
         font-size: 1.2em;
         height: 45%;
         width: 70%;
-        
+
     }
 
     #newStart {
@@ -417,31 +485,31 @@ div.tausta input {
         background-size: 100% 60%;
 
         height: 30%;
-        
+
     }
 
     #divideTask {
         background-size: 100% 60%;
         height: 45%;
-        
+
     }
 
     #multiplicationTask {
         background-size: 100% 73%;
         height: 30%;
-        
+
     }
 
     #verbalTask {
         background-size: 100% 55%;
         height: 35%;
-        
+
     }
 
     #circleTask {
         background-size: 100% 55%;
         height: 35%;
-        
+
     }
 
     #loppuArvio {
@@ -463,7 +531,7 @@ div.tausta input {
 
 @media screen and (max-width: 600px) {
     .inputField {
-        
+
         font-size: 1em;
         width: 70%;
     }
@@ -481,46 +549,47 @@ div.tausta input {
         background-size: 100% 55%;
         font-size: 0.9em;
         height: 35%;
-        
+
     }
 
     #divideTask {
         background-size: 100% 38%;
         font-size: 0.9em;
         height: 45%;
-        
+
     }
 
     #multiplicationTask {
         background-size: 100% 73%;
         height: 30%;
-       
+
     }
 
     #verbalTask {
         background-size: 100% 50%;
         font-size: 0.9em;
         height: 38%;
-        
+
     }
 
     #circleTask {
         background-size: 100% 50%;
         font-size: 0.9em;
         height: 35%;
-        
+
     }
 
     #loppuArvio {
         font-size: 1.1em;
         height: 45%;
-        
+
     }
 
     #newStart {
         left: 55%;
         top: 55%;
     }
+
     #loading {
         font-size: 1em;
     }
@@ -530,3 +599,12 @@ div.tausta input {
         /*https://www.shapedivider.app/*/
     }
 }
+
+
+
+
+
+
+/*     https://www.youtube.com/watch?v=Ebn7YlsHqPo        loading animation opetusvideo*/
+
+/*https://www.youtube.com/watch?v=AIYAbO5wHgM     ball animation opetusvideo*/
