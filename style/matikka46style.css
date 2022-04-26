@@ -1,35 +1,532 @@
-#multiRadio{
-    display: none;
-}
-#checkMultiply{
-    display: none;
-}
-#divideTaskA{
-display: none;
-
-}
-#divideTaskB{
-display: none;
-
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
 }
 
-#divideTaskC{
-
-display: none;
-}
-#divideAnswer{
-    display: none;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#checkDivide{
-    display: none;
+.tausta {
+    background-image: url(../image/tausta.png);
+    background-size: cover;
 }
-#prosentTaskOne{
-    display: none;
+
+h1 {
+    font-family: 'Permanent Marker';
+    font-size: 3em;
 }
-#prosentTaskTwo{
-    display: none;
+
+
+.inputField {
+    background-image: url(../image/abstract-g47b9c359c_1280.png);
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 70%;
+    background-color: #a02fd8;
+    border: black 1px solid;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    height: 33%;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+
 }
-#prosentTaskThree{
+
+.introText {
+    font-size: 1.2rem;
+
+
+}
+
+.answerText {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#percenTask {
+    background-size: 100% 63%;
     display: none;
+
+
+
+}
+
+#divideTask {
+    background-image: url(../image/abstract-g47b9c359c_1280.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 53%;
+    display: none;
+    height: 50%;
+}
+
+#multiplicationTask {
+    display: none;
+    background-size: 100% 75%;
+
+}
+
+#verbalTask {
+    display: none;
+    background-size: 100% 60%;
+    height: 40%;
+
+}
+
+#circleTask {
+    display: none;
+    background-size: 100% 60%;
+    height: 40%;
+
+}
+
+
+div.tausta input {
+    width: 55%;
+    margin-left: 25%;
+    margin-bottom: 0%;
+
+}
+
+#loading {
+    display: none;
+    font-size: 1.5em;
+    font-family: 'Permanent Marker';
+}
+#loading p{
+    color:rgb(255, 198, 42);
+}
+
+#loppuArvio {
+    display: none;
+    background-image: url(../image/abstract-g47b9c359c_1280.png);
+    font-family: 'Permanent Marker';
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 100%;
+    font-size: 1.3em;
+    background-color: #a02fd8;
+    height: 50%;
+    width: 40%;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: #71219a 5px solid;
+    border-radius: 10%;
+}
+
+#loading h1 {
+    text-transform: uppercase;
+    color: grey;
+    border-bottom: 16px solid grey;
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+
+}
+
+#loading h1:before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    color: rgb(255, 198, 42);
+    overflow: hidden;
+    border-bottom: 16px solid rgb(255, 198, 42);
+    animation: animate 10s linear infinite;
+}
+
+#bottomtausta {
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1650785033 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1650785033 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 234px;
+    /*https://www.shapedivider.app/*/
+}
+
+.custom-shape-divider-bottom-1650785033 .shape-fill {
+    fill: #BD10E047;
+}
+
+#imageRewards {
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgreward {
+
+    height: 150px;
+    width: 150px;
+    border: black 3px solid;
+    border-radius: 50%;
+
+}
+
+.fish {
+    background-color: aqua;
+}
+
+.puppy {
+    background-color: rgb(224, 166, 166);
+}
+
+.cat {
+    background-color: rgb(255, 0, 242);
+}
+
+.monster {
+    background-color: rgb(20, 95, 37);
+}
+
+.hamster {
+
+    background-color: rgb(199, 90, 18);
+}
+
+.goat {
+    background-color: blue;
+}
+
+#newStart {
+    position: absolute;
+    height: 75px;
+    left: 35%;
+    top: 70%;
+    border-radius: 10%;
+    border: black 2px solid;
+
+
+}
+
+
+
+
+@keyframes animate {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+
+}
+
+.custom-shape-divider-bottom-1650782958 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 277px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 .shape-fill {
+    fill: #FFFFFF;
+}
+@media screen and (max-width: 1200px) {
+
+    .inputField {
+        background-size: 100% 70%;
+        font-size: 1em;
+        width: 65%;
+
+    }
+
+    .answerText {
+
+        font-size: 1.5em;
+        font-weight: 500;
+
+    }
+
+    .introText {
+        font-size: 1em;
+    }
+
+
+
+    #percenTask {
+        background-size: 100% 65%;
+        height: 30%;
+        
+    }
+
+    #divideTask {
+        background-size: 100% 60%;
+        height: 35%;
+        
+    }
+
+    #multiplicationTask {
+        background-size: 100% 75%;
+        height: 30%;
+        
+
+    }
+
+    #verbalTask {
+        background-size: 100% 65%;
+        height: 33%;
+        
+    }
+
+    #circleTask {
+        background-size: 100% 65%;
+        height: 33%;
+        
+    }
+
+    #loppuArvio {
+        font-size: 1.2em;
+        height: 45%;
+        width: 60%;
+        
+    }
+
+    #newStart {
+        left: 35%;
+        top: 70%;
+    }
+
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 200px;
+        /*https://www.shapedivider.app/*/
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .inputField {
+        background-size: 100% 70%;
+        font-size: 1em;
+        width: 70%;
+
+    }
+
+    .answerText {
+
+        font-size: 1.5em;
+        font-weight: 500;
+
+    }
+
+    .introText {
+        font-size: 1.2em;
+    }
+
+
+
+    #percenTask {
+        background-size: 100% 54%;
+        height: 35%;
+        
+    }
+
+    #divideTask {
+        background-size: 100% 45%;
+        
+        height: 43%;
+        
+    }
+
+    #multiplicationTask {
+        background-size: 100% 75%;
+        height: 30%;
+        
+    }
+
+    #verbalTask {
+        background-size: 100% 49%;
+        
+        height: 40%;
+        
+    }
+
+    #circleTask {
+        background-size: 100% 50%;
+        height: 40%;
+       
+    }
+
+    #loppuArvio {
+        font-size: 1.2em;
+        height: 45%;
+        width: 70%;
+        
+    }
+
+    #newStart {
+        left: 35%;
+        top: 70%;
+    }
+
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 200px;
+        /*https://www.shapedivider.app/*/
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .inputField {
+        background-size: 100% 70%;
+        font-size: 1em;
+        width: 70%;
+    }
+
+    .answerText {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .introText {
+        font-size: 1em;
+    }
+
+    #percenTask {
+        background-size: 100% 60%;
+
+        height: 30%;
+        
+    }
+
+    #divideTask {
+        background-size: 100% 60%;
+        height: 45%;
+        
+    }
+
+    #multiplicationTask {
+        background-size: 100% 73%;
+        height: 30%;
+        
+    }
+
+    #verbalTask {
+        background-size: 100% 55%;
+        height: 35%;
+        
+    }
+
+    #circleTask {
+        background-size: 100% 55%;
+        height: 35%;
+        
+    }
+
+    #loppuArvio {
+        font-size: 1.2em;
+        height: 45%;
+        width: 75%;
+    }
+
+    #newStart {
+        height: 75px;
+        left: 35%;
+        top: 70%;
+    }
+
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inputField {
+        
+        font-size: 1em;
+        width: 70%;
+    }
+
+    .answerText {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .introText {
+        font-size: 1.1em;
+    }
+
+    #percenTask {
+        background-size: 100% 55%;
+        font-size: 0.9em;
+        height: 35%;
+        
+    }
+
+    #divideTask {
+        background-size: 100% 38%;
+        font-size: 0.9em;
+        height: 45%;
+        
+    }
+
+    #multiplicationTask {
+        background-size: 100% 73%;
+        height: 30%;
+       
+    }
+
+    #verbalTask {
+        background-size: 100% 50%;
+        font-size: 0.9em;
+        height: 38%;
+        
+    }
+
+    #circleTask {
+        background-size: 100% 50%;
+        font-size: 0.9em;
+        height: 35%;
+        
+    }
+
+    #loppuArvio {
+        font-size: 1.1em;
+        height: 45%;
+        
+    }
+
+    #newStart {
+        left: 55%;
+        top: 55%;
+    }
+    #loading {
+        font-size: 1em;
+    }
+
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 180px;
+        /*https://www.shapedivider.app/*/
+    }
 }
