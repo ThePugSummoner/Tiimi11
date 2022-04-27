@@ -11,21 +11,21 @@ h1 {
 
 
 .inputField {
-    background-image: url(../image/abstract-g47b9c359c_1280.png);
+   background-image: url(../image/abstract-g47b9c359c_1280.png);
     color: rgb(255, 255, 255);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: left bottom;
     position: absolute;
-    background-size: 100% 70%;
     background-color: #a02fd8;
     border: black 1px solid;
     border-radius: 10px;
     font-size: 0.8em;
     width: 75%;
+    height: auto;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     left: 50%;
-    top: 65%;
+    top: 70%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
@@ -36,7 +36,9 @@ h1 {
 .introText {
     
     font-size: 1em;
-    margin-top: 0;
+    margin:auto;
+    padding: 5px;
+    text-align: center;
     
 
 
@@ -46,12 +48,13 @@ h1 {
     color: #FFFFFF;
     font-size: 1.1em;
     font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: auto;
 }
 
 #percenTask {
     background-size: 100% 60%;
     display: none;
-    height: 40%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -59,13 +62,9 @@ h1 {
 }
 
 #divideTask {
-    background-image: url(../image/abstract-g47b9c359c_1280.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: 100% 44%;
     display: none;
     font-size: 0.7em;
-    height: 50%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -84,7 +83,6 @@ h1 {
 #verbalTask {
     display: none;
     background-size: 100% 48%;
-    height: 45%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -94,7 +92,6 @@ h1 {
 #circleTask {
     display: none;
     background-size: 100% 48%;
-    height: 45%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -135,6 +132,7 @@ div.tausta input {
     background-color: #a02fd8;
     border: #71219a 5px solid;
     border-radius: 10%;
+    top: 72%;
     animation: example 6s forwards;
    
     
@@ -373,7 +371,7 @@ div.tausta input {
     
     #percenTask {
         background-size: 100% 60%;
-        height: 33%;
+        height: auto;
        
     }
     

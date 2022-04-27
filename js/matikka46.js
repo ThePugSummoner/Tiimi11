@@ -145,7 +145,7 @@ function rewardImg() {
     if (rightAnswers.length == 0) {
 
         document.getElementById("imgRewardHere").innerHTML = rewardImages[0];
-        document.getElementById("rewardsText").textContent = "Valitettavasti koulutetut hamsterimme tarkistivat tehtäväsi ja löysivät tämän kuvan vastaamaan suoristustasi.Tällä kertaa ei mennyt aivan nappiin.";
+        document.getElementById("rewardsText").textContent = "Tällä kertaa ei mennyt aivan nappiin. Hamsterimme löysivät tälläisen kuvan sinulle.";
         document.getElementById("infoText").textContent = "Alta voit lähteä tekemään tehtäviä uudestaan.";
 
     }
