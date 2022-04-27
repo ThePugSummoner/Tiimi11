@@ -70,10 +70,11 @@ function answerShuffle(answerA, answerB, answerC, elementIdA, elementIdB, elemen
 
     let asnwerArray = [answerA, answerB, answerC];
 
-    for (let i = 0; i < asnwerArray.length; i++) {
+    for (let i = 0; i < 1; i++) {
         let randomNumber = getRndInteger(0, asnwerArray.length - 1);
         document.getElementById(elementIdA).value = asnwerArray[randomNumber];
         asnwerArray.splice(randomNumber, 1);
+            
 
         for (let j = 0; j < 1; j++) {
             let randomNumberTwo = getRndInteger(0, asnwerArray.length - 1);
@@ -293,10 +294,6 @@ function taskStartButton() {
     buttonDisableEnable("multiplicationA", "multiplicationB", "multiplicationC", false, false, false);
     buttonDisableEnable("verbalA", "verbalB", "verbalC", false, false, false);
     buttonDisableEnable("circleA", "circleB", "circleC", false, false, false);
-
-
-
-
 
     //percent
 
