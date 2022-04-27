@@ -198,7 +198,7 @@ let personsInAll = "";
 let circlePerimeter = "";
 
 //counter
-let counter = Number("");
+
 
 let rightAnswers = [];
 let wrongAnswers = [];
@@ -222,7 +222,8 @@ function taskStartButton() {
     //percent laskukaavat
     let randomPriceNumber = getRndInteger(80, 200);
     let randomPercent = getRndInteger(20, 60);
-    saleAmount = Math.floor(randomPriceNumber * (randomPercent / 100));
+    saleAmount =randomPriceNumber * (randomPercent / 100);
+    saleAmount=Math.round(saleAmount*100)/100;
     let saleAmountA = saleAmount - getRndInteger(4, 6);
     let saleAmountC = saleAmount + getRndInteger(2, 5);
 
@@ -333,8 +334,7 @@ function percent(event) {
     answerColors(saleAmount, "percentA", "percentB", "percentC");
     document.getElementById("percentAnswerText").innerHTML = answerText(saleAmount, event.currentTarget.id, "mathPercent");
     buttonDisableEnable("percentA", "percentB", "percentC", true, true, true);
-    counter.innerHTML = taskCounter(1);
-
+    setTimeout(function () { counter.innerHTML = taskCounter(1);}, 3000);
     timeOut("percenTask", "divideTask", 3000);
 
 
@@ -355,7 +355,7 @@ function divide(event) {
     document.getElementById("divideAnswerText").innerHTML = answerText(hiredStudents, event.currentTarget.id, "mathDivide");
     buttonDisableEnable("divideA", "divideB", "divideC", true, true, true);
     timeOut("divideTask", "multiplicationTask", 3000);
-    counter.innerHTML = taskCounter(2);
+    setTimeout(function () { counter.innerHTML = taskCounter(2);}, 3000);
 }
 
 let inputMultiplicationA = document.getElementById("multiplicationA");
@@ -373,7 +373,7 @@ function multiplication(event) {
     document.getElementById("multiplicationAnswerText").innerHTML = answerText(multiplicationAnswer, event.currentTarget.id, "mathMultiplication");
     buttonDisableEnable("multiplicationA", "multiplicationB", "multiplicationC", true, true, true);
     timeOut("multiplicationTask", "verbalTask", 3000);
-    counter.innerHTML = taskCounter(3);
+    setTimeout(function () { counter.innerHTML = taskCounter(3);}, 3000);
 }
 
 let inputVerbalA = document.getElementById("verbalA");
@@ -391,7 +391,7 @@ function verbal(event) {
     document.getElementById("verbalAnswerText").innerHTML = answerText(personsInAll, event.currentTarget.id, "mathVerbal");
     buttonDisableEnable("verbalA", "verbalB", "verbalC", true, true, true);
     timeOut("verbalTask", "circleTask", 3000);
-    counter.innerHTML = taskCounter(4);
+    setTimeout(function () { counter.innerHTML = taskCounter(4);}, 3000);
 }
 let inputCircleA = document.getElementById("circleA");
 inputCircleA.addEventListener("click", circle);
