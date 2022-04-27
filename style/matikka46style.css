@@ -12,8 +12,8 @@ h1 {
 
 .inputField {
    background-image: url(../image/abstract-g47b9c359c_1280.png);
+   background-size: 100% 60%;
     color: rgb(255, 255, 255);
-    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     background-color: #a02fd8;
@@ -53,7 +53,6 @@ h1 {
 }
 
 #percenTask {
-    background-size: 100% 60%;
     display: none;
     animation-name: example;
     animation-duration: 2s;
@@ -62,7 +61,6 @@ h1 {
 }
 
 #divideTask {
-    background-size: 100% 44%;
     display: none;
     font-size: 0.7em;
     animation-name: example;
@@ -72,8 +70,6 @@ h1 {
 
 #multiplicationTask {
     display: none;
-    
-    background-size: 100% 75%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -82,7 +78,6 @@ h1 {
 
 #verbalTask {
     display: none;
-    background-size: 100% 48%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -91,7 +86,6 @@ h1 {
 
 #circleTask {
     display: none;
-    background-size: 100% 48%;
     animation-name: example;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -342,7 +336,7 @@ div.tausta input {
     
     
     .inputField {
-        background-size: 100% 70%;
+ 
         font-size: 1em;
         width: 75%;
         height: auto;
@@ -370,36 +364,15 @@ div.tausta input {
         font-size: 1.1em;
     }
     
-    #percenTask {
-        background-size: 100% 60%;
-        
-       
-    }
+  
     
     #divideTask {
 
-        background-size: 100% 34%;
+ 
         font-size: 1em;
        
     }
-    
-    #multiplicationTask {
-        background-size: 100% 75%;
-    
-    }
-    
-    #verbalTask {
-        background-size: 100% 41%;
-       
-    }
-    
-    #circleTask {
-        display: none;        
-        background-size: 100% 46%;
-      
 
-    
-    }
     
     
     div.tausta input {
@@ -497,9 +470,10 @@ div.tausta input {
     
     
     .inputField {
-        background-size: 100% 70%;
+
         font-size: 1em;
         width: 75%;
+        height: auto;
         margin: 8px;
         padding: 8px;
         left: 50%;
@@ -524,34 +498,11 @@ div.tausta input {
         font-size: 1.3em;
     }
     
-    #percenTask {
-        background-size: 100% 57%;
-        height: 33%;
-       
-    }
+
     
     #divideTask {
 
-        background-size: 100% 39%;
         font-size: 1em;
-        height: 48%;
-    }
-    
-    #multiplicationTask {
-        background-size: 100% 75%;
-    
-    }
-    
-    #verbalTask {
-        background-size: 100% 42%;
-        height: 38%;
-    }
-    
-    #circleTask {
-        display: none;        
-        background-size: 100% 48%;
-        height: 35%;
-
     
     }
     
@@ -653,7 +604,7 @@ div.tausta input {
     
     
     .inputField {
-        background-size: 100% 70%;
+
         font-size: 1em;
         width: 75%;
         height: auto;
@@ -681,35 +632,12 @@ div.tausta input {
         font-size: 1.4em;
     }
     
-    #percenTask {
-        background-size: 100% 57%;
-       
-       
-    }
+  
     
     #divideTask {
 
-        background-size: 100% 39%;
         font-size: 1em;
         
-    }
-    
-    #multiplicationTask {
-        background-size: 100% 75%;
-    
-    }
-    
-    #verbalTask {
-        background-size: 100% 42%;
-        
-    }
-    
-    #circleTask {
-        display: none;        
-        background-size: 100% 48%;
-        
-
-    
     }
     
     
