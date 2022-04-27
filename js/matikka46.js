@@ -271,6 +271,7 @@ function taskStartButton() {
     document.getElementById("loppuArvio").style.display = "none";
     document.querySelector(".introText").style.display="block";
    document.getElementById("pText").style.display="none";
+   document.getElementById("pCounterText").classList.add("countersize");
 
     document.getElementById("imgRewardHere").innerHTML = "";
 
