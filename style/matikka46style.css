@@ -345,6 +345,7 @@ div.tausta input {
         background-size: 100% 70%;
         font-size: 1em;
         width: 75%;
+        height: auto;
         margin: 8px;
         padding: 8px;
         left: 50%;
@@ -371,7 +372,7 @@ div.tausta input {
     
     #percenTask {
         background-size: 100% 60%;
-        height: auto;
+        
        
     }
     
@@ -379,7 +380,7 @@ div.tausta input {
 
         background-size: 100% 34%;
         font-size: 1em;
-        height: 51%;
+       
     }
     
     #multiplicationTask {
@@ -389,12 +390,13 @@ div.tausta input {
     
     #verbalTask {
         background-size: 100% 41%;
-        height: 40%;
+       
     }
     
     #circleTask {
-        display: none;        background-size: 100% 46%;
-        height: 38%;
+        display: none;        
+        background-size: 100% 46%;
+      
 
     
     }
@@ -409,7 +411,7 @@ div.tausta input {
     
     #loading {
         font-size: 1.2em;
-        top: 60%;
+        top: 50%;
         left: 50%;
 
     
@@ -422,7 +424,8 @@ div.tausta input {
     #loppuArvio {
         background-size: 100% 100%;
         font-size: 1em;
-        height: 35%;    
+        height: 35%; 
+        top: 50%;   
     }
 
     
@@ -575,7 +578,8 @@ div.tausta input {
     #loppuArvio {
         background-size: 100% 100%;
         font-size: 1.1em;
-        height: 35%;    
+        height: 35%;
+        top: 50%;    
     }
 
     
@@ -638,6 +642,172 @@ div.tausta input {
   
 
 }
+
+
+@media screen and (min-width: 992px){
+
+    h1 {
+        font-size: 4.5em;
+    }
+    
+    
+    
+    .inputField {
+        background-size: 100% 70%;
+        font-size: 1em;
+        width: 75%;
+        height: auto;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+    }
+    
+    
+    .introText {
+        
+        font-size: 1.5em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
+        font-size: 1.4em;
+    }
+    
+    #percenTask {
+        background-size: 100% 57%;
+       
+       
+    }
+    
+    #divideTask {
+
+        background-size: 100% 39%;
+        font-size: 1em;
+        
+    }
+    
+    #multiplicationTask {
+        background-size: 100% 75%;
+    
+    }
+    
+    #verbalTask {
+        background-size: 100% 42%;
+        
+    }
+    
+    #circleTask {
+        display: none;        
+        background-size: 100% 48%;
+        
+
+    
+    }
+    
+    
+    div.tausta input {
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
+    }
+    
+    #loading {
+        font-size: 1.em;
+        top: 50%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1.3em;
+       
+        top: 50%;    
+    }
+
+    
+
+    
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 150px;
+    }
+    .imgreward {
+    
+        height: 125px;
+        width: 125px;
+        border: black 3px solid;
+        border-radius: 50%;
+    
+    }
+
+    
+    #newStart {
+        height: 65px;
+        left: 35%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 5%;
+        width: 80px;
+        height: 80px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 95%;
+        left: 10%;
+        width: 90px;
+        height: 90px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 95%;
+        left: 65%;
+        width: 70px;
+        height: 70px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 15%;
+        left: 65%;
+        width: 80px;
+        height: 80px;
+
+    }
+  
+  
+
+}
+
+
+
+    
+  
+  
+
+
+
 
 
 
