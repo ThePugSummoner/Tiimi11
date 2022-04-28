@@ -1,112 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/23abaa8a95.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid ">
-            <a class="navbar-brand">Web-Projekti Tiimi 11</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  ms-1 ms-lg-5 mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page"><i
-                                class="fa-solid fa-house"></i>
-                            Pääsivu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active"><i class="fa-solid fa-circle-info"></i> Tietoa</a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOne" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-calculator"></i>
-                            Matikkapaketti
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOne">
-                            <li><a class="dropdown-item" href="#">1-3 luokkalaisille</a></li>
-                            <li><a class="dropdown-item" href="matikka46.html">4-6 luokkalaisille</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-atlas"></i>
-                            Tietovisa
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Historia</a></li>
-                            <li><a class="dropdown-item" href="#">Maantieto</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+    
+    <!-- CSS määrittelyt -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--Navbar alku-->
+      <nav class="navbar fixed-top" style="width: fit-content;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sidebar</h5>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-right" data-bs-dismiss="offcanvas">
+              <li>
+                <a href="#scrollspyHeading1" class="nav-link py-3">
+                  <i class="fa-solid fa-house"></i> 
+                  <span>Etusivu</span>
+                </a>
+              </li>
+              <li>
+                <a href="#scrollspyHeading2" class="nav-link py-3">
+                  <i class="fa-solid fa-plus-minus"></i>
+                  <span>Matikkapaketti 1-3 luokka</span>
+                </a>
+              </li>
+              <li>
+                <a href="#scrollspyHeading3" class="nav-link py-3">
+                  <i class="fa-solid fa-percent"></i>
+                  <span>Matikkapaketti 4-6 luokka</span>
+                </a>
+              </li>
+              <li>
+                <a href="#scrollspyHeading4" class="nav-link py-3">
+                  <i class="fa-solid fa-book-atlas"></i>
+                  <span>Maantieto</span>
+                </a>
+              </li>
+              <li>
+                <a href="#scrollspyHeading5" class="nav-link py-3">
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>Historia</span>
+                </a>
+              </li>
+              <li>
+                <a href="#scrollspyHeading6" class="nav-link py-3">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Tietoa</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
     </nav>
-    <div class="container-fluid ">
-        <div class="row d-flex text-dark">
-
-            <div class="tausta col-12 position-relative min-vh-100">
-                <div class="transbox">
-                    <p class="text-center mx-5 py-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                        maxime explicabo adipisci fuga, earum beatae accusantium veritatis atque inventore ipsa magnam.
-                        Totam atque suscipit nihil autem, veritatis libero modi veniam.
-                    </p>
-                    <p class="text-center mx-5 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-                        veritatis unde similique? Cumque mollitia provident perferendis repellendus ullam, nemo illo
-                        alias sequi quo, in quia eos totam recusandae esse laudantium?</p>
-                    <p class="text-center mx-5 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-                        porro id aliquid possimus corrupti sint sapiente suscipit atque maxime debitis! Qui eveniet
-                        vitae esse modi eaque ipsum ratione in obcaecati.
-                    </p>
-                    <p class="text-center mx-5 py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-                        placeat maxime adipisci natus vitae sed, alias commodi doloribus provident velit repudiandae sit
-                        consectetur voluptates reiciendis eligendi maiores aperiam dolor delectus?</p>
-
-
-
-                </div>
-                <div>
-                    <img id="lapsetkoulussa" src="/images/etusivunkuva.jpg" class="rounded mx-auto d-block my-5"
-                        alt="lapset koulussa">
-                </div>
-            </div>
-
-        </div>
+    <!--Navbar loppu-->
+  <div>
+    <div>
+      <h1 id="scrollspyHeading1">Etusivu</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates ratione accusantium velit natus. Facilis quo, quasi quam voluptates est voluptas magnam. Voluptate, sed illum. Beatae corrupti modi maxime cupiditate.
+    Rerum labore autem in alias corrupti corporis excepturi atque, dignissimos eligendi quia deleniti, modi sequi necessitatibus enim quod natus doloribus et quo voluptatem aspernatur accusamus! Reiciendis incidunt tenetur reprehenderit dignissimos.
+    Placeat voluptatum delectus saepe, temporibus debitis tempore molestias itaque consectetur amet deserunt pariatur. Inventore amet, perspiciatis praesentium consectetur libero odio cumque maxime labore atque sint placeat est ea ipsam animi?
+    Quibusdam, veniam nam placeat voluptatum corporis exercitationem ex velit inventore asperiores atque soluta blanditiis alias ad nostrum saepe repudiandae laudantium consequuntur. Provident ullam fugit deleniti laborum molestiae natus ut tempora.
+    Possimus facere quod quo adipisci ipsam quae quia explicabo vitae eligendi provident! A voluptatum dolorum ratione deleniti rem, repellendus eos accusamus veritatis nemo aut? Expedita nisi enim saepe ducimus commodi.</p>
+      <img id="lapset" src="images/etusivunkuva.jpg" class="rounded mx-auto d-block my-5" alt="">
     </div>
-    <div class="container-fluid">
-        <div class="row row-cols-1  row-cols-md-3">
-            <div class="col bg-dark text-white">
-                <p class="text-center py-2 mt-2 fs-6">Tietojenkäsittelyn tutkinto-ohjelman (TIK22KM)</p>
-            </div>
-            <div class="col bg-dark text-white">
-                <p class="text-center py-2 mt-0 fs-6">Informaatioteknologia, Oamk</p>
-            </div>
-            <div class="col bg-dark text-white">
-                <p class="text-center py-2 mt-0 fs-6">Aloitus vuosi 2022</p>
+    <div>
+      <a href="pages/matikka13.html"><h1 id="scrollspyHeading2">Matikka 1-3 luokka</h1></a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
+    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
+    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
+    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
+    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
+    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
+    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+    </div>
+    <div>
+      <a href="pages/matikka46.html"><h1 id="scrollspyHeading3">Matikka 4-6 luokka</h1></a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
+    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
+    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
+    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
+    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
+    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
+    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+    </div>
+    <div>
+      <a href="pages/maantieto.html"><h1 id="scrollspyHeading4">Maantieto</h1></a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
+    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
+    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
+    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
+    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
+    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
+    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+      <img id="globe" src="images/hands-600497_640.jpg" class="rounded mx-auto d-block my-5" alt="">
+    </div>
+    <div>
+      <a href="pages/historia.html"><h1 id="scrollspyHeading5">Historia</h1></a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
+    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
+    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
+    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
+    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
+    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
+    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+    </div>
+    <div>
+      <h1 id="scrollspyHeading6">Tietoa</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
+    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
+    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
+    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
+    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
+    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
+    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+    <div id="carouselExampleCaptions" class="carousel slide mx-auto d-block my-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="person1" src="images/bulldog-1047518_640.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="person2" src="images/rottweiler-1535961_640.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="person3" src="images/puppy-1047521_640.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+          <div class="carousel-item">
+            <img id="person4" src="images/pug-698659_640.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fourth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
             </div>
         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
+    </div>
+    <footer>
+      <div>
+        <p>Tiettojenkäsittely TIK22KM</p>
+      </div>
+      <div>
+        <p>Web-Projekti Tiimi 11</p>
+      </div>
+      <div>
+        <p>Kevät 2022</p>
+      </div>
+    </footer>
+  </div>
+  <!--Bootstrap js määrittelyt-->
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/0d05d2dbfa.js" crossorigin="anonymous"></script>
+  </body>
 </html>

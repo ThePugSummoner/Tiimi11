@@ -1,0 +1,212 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-image: url(../images/watercolors-413275.jpg);
+    background-position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  div {
+    overflow-y: auto;
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+  }
+  
+  .scrollarea {
+    overflow-y: auto;
+  }
+  
+  .fw-semibold { font-weight: 600; }
+  .lh-tight { line-height: 1.25; }
+  
+  .fa-solid {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #scrollspyHeading1 {
+    margin-top: 1em;
+  }
+  
+  #scrollspyHeading4 {
+    margin-top: 1em;
+  }
+  
+  p {
+    margin-top: 1em;
+    margin-left: 3em;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  h1, h2 {
+    margin-top: 1em;
+    text-align: center;
+  }
+    
+  .nav-link {
+    color: antiquewhite;
+  }
+  
+  .nav-link:hover {
+    color: rgb(144, 144, 250);
+  }
+
+  .nav-link:focus {
+      color: rgb(144, 144, 250);
+  }
+  
+  .navbar-toggler {
+    padding-top: 0.5em;
+    padding-bottom: 0em;
+    color: rgb(46, 45, 45);
+    border-color: rgb(46, 45, 45);
+    background-color: transparent;
+  }
+  .navbar-toggler:hover {
+    color: antiquewhite;
+    border-color: antiquewhite;
+    background-color: rgb(46, 45, 45)
+  }
+  
+  .btn-toolbar{
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-toolbar .btn {
+    color: antiquewhite;
+    background-color: rgb(46, 45, 45);
+    border-color:rgb(46, 45, 45);
+    margin: 1em 1em 1em 1em;
+    width: max-content;
+  }
+
+  .btn:hover {
+    color: rgb(144, 144, 250);
+  }
+  
+  #tehtävä1 {
+    align-items: center;
+    padding-left: 5em;
+    justify-content: space-around;
+  }
+  
+  footer {
+    display: flex;
+    background-color:rgb(46, 45, 45);
+    color: antiquewhite;
+    height: fit-content;
+    justify-content: space-around;
+    width: 100%;
+    }
+  
+  footer div p{
+    margin: 0.5em;
+  }
+  
+  #carouselExampleCaptions {
+    height: 40%;
+    width: 40%;
+    margin: 1em;
+  }
+  
+  .container-fluid {
+    padding-top: 0.5em;
+    height: 4em;
+  }
+  
+  .offcanvas-header {
+    color: antiquewhite;
+    background-color: rgb(46, 45, 45);
+  }
+  
+  .offcanvas-body {
+    background-color: rgb(46, 45, 45);
+  }
+  
+  .offcanvas {
+    width: fit-content;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+    footer {
+      display: block;
+    }
+
+    #image {
+    height: 60%;
+    width: 65%;
+    }
+
+    .navbar-toggler {
+      padding-top: 0.5em;
+      padding-bottom: 0em;
+      color: rgb(46, 45, 45);
+      border-style: none;
+      background-color: transparent;
+    }
+  
+    .navbar-toggler:hover {
+      color: antiquewhite;
+      border-color: antiquewhite;
+      background-color: rgb(46, 45, 45)
+    }
+
+    .btn-toolbar {
+      flex-direction:row;
+    }
+
+    }
+  
+  @media (max-width: 576px) {
+  
+    footer {
+      display: block;
+    }
+  
+    body {
+      font-size: 0.85em;
+    }
+
+    #image {
+    height: 47.5%;
+    width: 50%;
+    }
+
+    .btn-toolbar {
+      flex-direction: column;
+    }
+    
+    .navbar-toggler {
+      padding-top: 0.5em;
+      padding-bottom: 0em;
+      color: rgb(46, 45, 45);
+      border-style: none;
+      background-color: transparent;
+    }
+  
+    .navbar-toggler:hover {
+      color: antiquewhite;
+      border-color: antiquewhite;
+      background-color: rgb(46, 45, 45)
+    }
+  }

@@ -1,0 +1,202 @@
+/*Navbar ja bootstrap määrittelyt alkaa*/
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-image: url(../images/paper-2050768.jpg);
+  background-position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+div {
+  overflow-y: auto;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.fw-semibold { font-weight: 600; }
+.lh-tight { line-height: 1.25; }
+
+[class^="fa-solid"] {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link {
+  color: antiquewhite;
+}
+
+.nav-link:hover {
+  color: rgb(144, 144, 250);
+}
+
+.navbar-toggler {
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  color: rgb(46, 45, 45);
+  border-color: rgb(46, 45, 45);
+  background-color: transparent;
+}
+
+.navbar-toggler:hover {
+  color: antiquewhite;
+  border-color: antiquewhite;
+  background-color: rgb(46, 45, 45)
+}
+
+.offcanvas {
+  visibility: hidden;
+}
+
+.container-fluid {
+  padding-top: 0;
+  padding-left: 0.75em;
+  height: 4em;
+}
+
+.offcanvas-header {
+  color: antiquewhite;
+  background-color: rgb(46, 45, 45);
+}
+
+.offcanvas-body {
+  background-color: rgb(46, 45, 45);
+}
+
+.offcanvas {
+  width: fit-content;
+}
+
+/*Tähän asti*/
+
+#lapset {
+  height: 47.5%;
+  width: 50%;
+}
+
+#scrollspyHeading1 {
+  margin-top: 1em;
+}
+
+p {
+  margin: 3em 3em 3em 7em;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 1em;
+  text-align: center;
+  color: rgb(46, 45, 45);
+}
+
+a {
+  color: rgb(46, 45, 45);
+}
+
+h1:hover, a:hover {
+  color: rgb(144, 144, 250);
+}
+
+#scrollspyHeading1:hover, #scrollspyHeading6:hover {
+  color: rgb(46, 45, 45);
+}
+
+#carouselExampleCaptions {
+  height: 40%;
+  width: 40%;
+  margin: 1em;
+}
+
+footer {
+  display: flex;
+  background-color:rgb(46, 45, 45);
+  background-position: sticky;
+  color: antiquewhite;
+  height: fit-content;
+  justify-content: space-around;
+}
+
+footer div p{
+  margin: 0.5em;
+}
+
+@media (max-width: 768px) {
+  
+  footer {
+    display: block;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+
+  .navbar-toggler {
+    padding-top: 0.5em;
+    padding-bottom: 0em;
+    color: rgb(46, 45, 45);
+    border-style: none;
+    background-color: transparent;
+  }
+  .navbar-toggler:hover {
+    color: antiquewhite;
+    background-color: rgb(46, 45, 45)
+  }
+
+  #globe {
+    height: 47.5%;
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  footer {
+    display: block;
+  }
+
+  body {
+    font-size: 0.8em;
+  }
+
+  .navbar-toggler {
+    padding-top: 0.5em;
+    padding-bottom: 0em;
+    color: rgb(46, 45, 45);
+    border-style: none;
+    background-color: transparent;
+  }
+
+  .navbar-toggler:hover {
+    color: antiquewhite;
+    border-color: antiquewhite;
+    background-color: rgb(46, 45, 45)
+  }
+
+  #globe {
+      height: 47.5%;
+      width: 50%;
+    }
+
+  h1 {
+    margin-left: 2em;
+  }
+}
