@@ -202,24 +202,16 @@ function rewardImg() {
         document.getElementById("infoText").textContent = "Kaikki tehtävät menivät oikein hienoa! Pääset tekemään tehtäviä uudestaan painamalla nappia!";
     }
 }
-//globaalit muuttujat
-
-//Percent
-let saleAmount = "";
-
-//Divide
-let hiredStudents = "";
-
-//Multiplication
-let multiplicationAnswer = "";
-
-//Verbal task
-let personsInAll = "";
-
-//Circle Perimeter
-let circlePerimeter = "";
-
-//counter
+//arrayt / oliot
+let mathValues = [
+    {
+        saleamount: "",
+        hiredstudents: "",
+        multiplication: "",
+        persons: "",
+        perimeter: ""
+    }
+];
 
 let inputIds = [];
 let rightAnswers = [];
@@ -230,6 +222,7 @@ let rewardImages = ['<img src="./image/goat-g6fdc2112e_640.png"class="imgreward 
     '<img src="./image/cat-g9cc78c623_640.png"class="imgreward cat" alt="cat">',
     '<img src="./image/monster-gbc997e1d4_640.png"class="imgreward monster" alt="monster">',
     '<img src="./image/hamster-ga35ef1ede_640.png" class="imgreward hamster"alt="hamster">'];
+
 
 let button = document.querySelector("#newStart");
 let buttonStart = document.querySelector("#startButton");
@@ -244,40 +237,45 @@ function taskStartButton() {
     //percent laskukaavat
     let randomPriceNumber = getRndInteger(80, 200);
     let randomPercent = getRndInteger(20, 60);
-    saleAmount = randomPriceNumber * (randomPercent / 100);
+    let saleAmount = randomPriceNumber * (randomPercent / 100);
     saleAmount = Math.round(saleAmount * 100) / 100;
     let saleAmountA = saleAmount - getRndInteger(4, 6);
     let saleAmountC = saleAmount + getRndInteger(2, 5);
+    mathValues.saleamount = saleAmount;
 
     //Divide laskukaavat
     let randomPriceDivideNumber = getRndInteger(800, 1200);
     let randomMoneyAmount = getRndInteger(120, 180);
-    hiredStudents = Math.floor(randomPriceDivideNumber / randomMoneyAmount);
+    let hiredStudents = Math.floor(randomPriceDivideNumber / randomMoneyAmount);
     let hiredStudentsB = hiredStudents - getRndInteger(2, 4);
     let hiredStudentsC = hiredStudents + getRndInteger(1, 3);
+    mathValues.hiredstudents = hiredStudents;
 
     //Multiplication laskukaavat
     let multiplicationRandomOne = getRndInteger(20, 80);
     let multiplicationRandomTwo = getRndInteger(20, 80);
-    multiplicationAnswer = multiplicationRandomOne * multiplicationRandomTwo;
+    let multiplicationAnswer = multiplicationRandomOne * multiplicationRandomTwo;
     let multiplicationAnswerA = multiplicationAnswer - getRndInteger(2, 5);
     let multiplicationAnswerC = multiplicationAnswer + getRndInteger(1, 4);
+    mathValues.multiplication = multiplicationAnswer;
 
     // Verbal task
     let personInFamilyRng = getRndInteger(2, 5);
     let personsInFamilyTwoRng = getRndInteger(2, 5);
-    personsInAll = (4 * personInFamilyRng) + (2 * personsInFamilyTwoRng);
+    let personsInAll = (4 * personInFamilyRng) + (2 * personsInFamilyTwoRng);
     let personInAllA = personsInAll + getRndInteger(1, 4);
     let personInAllC = personsInAll - getRndInteger(2, 6);
+    mathValues.persons = personsInAll;
 
     //ympyrän piiri
 
     let metersRng = getRndInteger(1, 5);
     let circleRadius = (800 / Math.PI) / 2;
     let circleRadiusRng = circleRadius + metersRng;
-    circlePerimeter = Math.floor(2 * Math.PI * circleRadiusRng);
+    let circlePerimeter = Math.floor(2 * Math.PI * circleRadiusRng);
     let circlePerimeterA = Math.floor(circlePerimeter + getRndInteger(1, 3));
     let circlePerimeterC = Math.floor(circlePerimeter - getRndInteger(1, 3));
+    mathValues.perimeter = circlePerimeter;
 
     //counter
 
@@ -341,8 +339,8 @@ let inputPercentC = document.getElementById("percentC");
 inputPercentC.addEventListener("click", percent);
 
 function percent(event) {
-    answerColors(saleAmount, "percentA", "percentB", "percentC");
-    document.getElementById("percentAnswerText").innerHTML = answerText(saleAmount, event.currentTarget.id, "mathPercent");
+    answerColors(mathValues.saleamount, "percentA", "percentB", "percentC");
+    document.getElementById("percentAnswerText").innerHTML = answerText(mathValues.saleamount, event.currentTarget.id, "mathPercent");
     buttonDisableEnable("percentA", "percentB", "percentC", true, true, true);
     setTimeout(function () { counter.innerHTML = taskCounter(1); }, 3000);
     timeOut("percenTask", "divideTask", 3000);
@@ -361,8 +359,8 @@ inputDivideC.addEventListener("click", divide);
 //divide buttons A , b ja c
 function divide(event) {
 
-    answerColors(hiredStudents, "divideA", "divideB", "divideC");
-    document.getElementById("divideAnswerText").innerHTML = answerText(hiredStudents, event.currentTarget.id, "mathDivide");
+    answerColors(mathValues.hiredstudents, "divideA", "divideB", "divideC");
+    document.getElementById("divideAnswerText").innerHTML = answerText(mathValues.hiredstudents, event.currentTarget.id, "mathDivide");
     buttonDisableEnable("divideA", "divideB", "divideC", true, true, true);
     timeOut("divideTask", "multiplicationTask", 3000);
     setTimeout(function () { counter.innerHTML = taskCounter(2); }, 3000);
@@ -379,8 +377,8 @@ inputMultiplicationC.addEventListener("click", multiplication);
 
 //Multiplication buttons A ,B ja C
 function multiplication(event) {
-    answerColors(multiplicationAnswer, "multiplicationA", "multiplicationB", "multiplicationC");
-    document.getElementById("multiplicationAnswerText").innerHTML = answerText(multiplicationAnswer, event.currentTarget.id, "mathMultiplication");
+    answerColors(mathValues.multiplication, "multiplicationA", "multiplicationB", "multiplicationC");
+    document.getElementById("multiplicationAnswerText").innerHTML = answerText(mathValues.multiplication, event.currentTarget.id, "mathMultiplication");
     buttonDisableEnable("multiplicationA", "multiplicationB", "multiplicationC", true, true, true);
     timeOut("multiplicationTask", "verbalTask", 3000);
     setTimeout(function () { counter.innerHTML = taskCounter(3); }, 3000);
@@ -397,8 +395,8 @@ inputVerbalC.addEventListener("click", verbal);
 
 //Verbal buttons A , B ja C
 function verbal(event) {
-    answerColors(personsInAll, "verbalA", "verbalB", "verbalC");
-    document.getElementById("verbalAnswerText").innerHTML = answerText(personsInAll, event.currentTarget.id, "mathVerbal");
+    answerColors(mathValues.persons, "verbalA", "verbalB", "verbalC");
+    document.getElementById("verbalAnswerText").innerHTML = answerText(mathValues.persons, event.currentTarget.id, "mathVerbal");
     buttonDisableEnable("verbalA", "verbalB", "verbalC", true, true, true);
     timeOut("verbalTask", "circleTask", 3000);
     setTimeout(function () { counter.innerHTML = taskCounter(4); }, 3000);
@@ -414,8 +412,8 @@ inputCircleC.addEventListener("click", circle);
 
 //Circle Perimiter
 function circle(event) {
-    answerColors(circlePerimeter, "circleA", "circleB", "circleC");
-    document.getElementById("circleAnswerText").innerHTML = answerText(circlePerimeter, event.currentTarget.id, "mathCircle");
+    answerColors(mathValues.perimeter, "circleA", "circleB", "circleC");
+    document.getElementById("circleAnswerText").innerHTML = answerText(mathValues.perimeter, event.currentTarget.id, "mathCircle");
     buttonDisableEnable("circleA", "circleB", "circleC", true, true, true);
     document.getElementById("correctAnswers").innerHTML = rightAnswers.length;
     rewardImg();
