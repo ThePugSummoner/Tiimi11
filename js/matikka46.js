@@ -1,3 +1,10 @@
+
+/**
+ * Satunnaislukugeneraattori laitetaan pienin haluttu (min) ja suurin haluttu (max)
+ * @param {number} min 
+ * @param {number} max 
+ * @returns 
+ */
 function getRndInteger(min, max) {// random number generaattori
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -17,7 +24,19 @@ function styleBackgroundColorThree(elementId, elementIdTwo, elementIdThree, colo
 
 }
 
+/**
+ * Array:lle missä id vaihdetaan backgrounColor white ja disabled false. Poistaa array itemit
+ * @param {array} array 
+ */
+function inputStyleAndDisabled(array) {
+    let i = 0;
+    while (i < array.length) {
+        document.getElementById(array[i]).disabled = false;
+        document.getElementById(array[i]).style.backgroundColor = "white";
+        array.shift();
+    }
 
+}
 /**
  * Laittaa osoitetulle "document.getElementByid" valuen
  * elementId - value1 ja elementIdTwo - value2.
@@ -55,7 +74,6 @@ function buttonDisableEnable(elementIdA, elementIdB, elementIdC, valueA, ValueB,
     document.getElementById(elementIdB).disabled = ValueB;
     document.getElementById(elementIdC).disabled = ValueC;
 }
-
 /**
  * Laittaa asnwerA , B ja C arrayhin. Ottaa sieltä randomilla yhden ja laittaa annettuu "getElementById":n valueksi
  * samalla poistaa sieltä arvotun arrayn pois.
@@ -103,14 +121,17 @@ function answerColors(rightAnswer, elementIdA, elementIdB, elementIdC) {
 
     if (document.getElementById(elementIdA).value == rightAnswer && document.getElementById(elementIdB).value != rightAnswer && document.getElementById(elementIdC).value != rightAnswer) {
         styleBackgroundColorThree(elementIdA, elementIdB, elementIdC, "green", "red", "red");
+        inputIds.push(elementIdA, elementIdB, elementIdC);
 
     }
     else if (document.getElementById(elementIdB).value == rightAnswer && document.getElementById(elementIdA).value != rightAnswer && document.getElementById(elementIdC).value != rightAnswer) {
         styleBackgroundColorThree(elementIdA, elementIdB, elementIdC, "red", "green", "red");
+        inputIds.push(elementIdA, elementIdB, elementIdC);
     }
 
     else {
         styleBackgroundColorThree(elementIdA, elementIdB, elementIdC, "red", "red", "green");
+        inputIds.push(elementIdA, elementIdB, elementIdC);
     }
 }
 /**
@@ -200,7 +221,7 @@ let circlePerimeter = "";
 
 //counter
 
-
+let inputIds = [];
 let rightAnswers = [];
 let wrongAnswers = [];
 let rewardImages = ['<img src="./image/goat-g6fdc2112e_640.png"class="imgreward goat" alt="goat">',
@@ -283,17 +304,7 @@ function taskStartButton() {
     document.getElementById("verbalAnswerText").innerHTML = "";
     document.getElementById("circleAnswerText").innerHTML = "";
 
-    styleBackgroundColorThree("percentA", "percentB", "percentC", "white", "white", "white");
-    styleBackgroundColorThree("divideA", "divideB", "divideC", "white", "white", "white");
-    styleBackgroundColorThree("multiplicationA", "multiplicationB", "multiplicationC", "white", "white", "white");
-    styleBackgroundColorThree("verbalA", "verbalB", "verbalC", "white", "white", "white");
-    styleBackgroundColorThree("circleA", "circleB", "circleC", "white", "white", "white");
-
-    buttonDisableEnable("percentA", "percentB", "percentC", false, false, false);
-    buttonDisableEnable("divideA", "divideB", "divideC", false, false, false);
-    buttonDisableEnable("multiplicationA", "multiplicationB", "multiplicationC", false, false, false);
-    buttonDisableEnable("verbalA", "verbalB", "verbalC", false, false, false);
-    buttonDisableEnable("circleA", "circleB", "circleC", false, false, false);
+    inputStyleAndDisabled(inputIds);
 
     //percent
 
@@ -315,6 +326,8 @@ function taskStartButton() {
     //piiri
     answerShuffle(circlePerimeterA, circlePerimeter, circlePerimeterC, "circleA", "circleB", "circleC");
     document.getElementById("meters").innerHTML = metersRng;
+
+
 
 }
 
