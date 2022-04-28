@@ -9,7 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/23abaa8a95.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style/matikka46style.css">
+    <link rel="stylesheet" href="./style/matikka46style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
 
@@ -35,7 +38,7 @@
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOne" role="button"
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownOne" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-calculator"></i>
                             Matikkapaketti
                         </a>
@@ -45,7 +48,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-atlas"></i>
                             Tietovisa
                         </a>
@@ -58,150 +61,160 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid ">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 d-flex text-dark">
+    <div class="tausta container-fluid ">
+        <div class="row row-cols-3 d-flex text-dark">
+            <div class="col-12  min-vh-100">
 
-            <div class="multiply col border border-primary min-vh-100">
-                <h1 class="text-center">Kertolasku</h1>
-
-                <p class="text-center">laske seuraava kertolasku ja valitse alta oikea vaihtoehto</p>
-
-                <button id="multiStartBtn" onclick="multiplyButton()">Aloita lasku</button>
-
-                <p><span id="multiNumbers"></span></p>
-
-                <form id="multiRadio">
-                    <input type="radio" id="multiInputA" name="multiply" value="1" checked onclick="answerCheck(1)">
-                    <label for="multiInputA"><span id="multiAnswerA"></span></label><br>
-
-                    <input type="radio" id="multiInputB" name="multiply" value="2" checked onclick="answerCheck(2)">
-                    <label for="multiInputB"><span id="multiAnswerB"></span></label><br>
-
-                    <input type="radio" id="multiInputC" name="multiply" value="3" checked onclick="answerCheck(3)">
-                    <label for="multiInputC"><span id="multiAnswerC"></span></label><br>
-
-                    <input type="radio" id="multiInputD" name="multiply" value="4" checked onclick="answerCheck(4)">
-                    <label for="multiInputD"><span id="multiAnswerD"></span></label><br>
-
-                    <input type="radio" id="multiInputE" name="multiply" value="5" checked onclick="answerCheck(5)">
-                    <label for="multiInputE"><span id="multiAnswerE"></span></label><br>
-
-
-                </form>
-                <p><span id="answer"></span></p>
-                <p><span id="error"></span></p>
-                <button onclick="multiplyCheck()" id="checkMultiply"> Tarkista vastaus</button>
-
-
-
-
-            </div>
-            <div class="divide col border border-primary min-vh-100">
-                <h1 class="text-center">Jakolasku</h1>
-                <p>Alla näet sanallisia jakolaskuja. Laske laskut ja anna pelkkä vastaus vastauskenttään.</p>
-                <button id="divideStartButton" onclick="divideButton()">Aloita lasku</button>
-
-                <section id="divideTaskA">
-                    <p>Seinän leveys on 430 cm, kuinka monta tapettivuotaa tarvitaan yhteen seinään,
-                        kun vuodan leveys on 60 cm? Vuota tarkoittaa rullan levyistä, katosta lattiaan asti ylettyvää
-                        tapetin palaa.</p>
-                        
-                    
-
-                </section>
-                <section id="divideTaskB">
-                    <p>Seinän leveys on 430 cm, huonekorkeus on 250 cm. Vuota tarkoittaa rullan
-                        levyistä, katosta lattiaan asti ylettyvää tapetin palaa. Kuinka monta vuotaa saadaan yhdestä
-                        tapettirullasta, kun yhdessä rullassa on 11 metriä?</p>
-                       
-                </section>
-                <section id="divideTaskC">
-                    <p>Miehellä on käytössään 876 euroa. Hän halusi palkata mahdollisimman monta
-                        koululaista kesätöihin puutarhaansa viideksi päiväksi, juhannusviikolle. Palkkaa hän lupasi
-                        maksaa 150 € kullekin koululaiselle. Kuinka monta koululaista mies pystyi palkkaamaan?</p>
-
-                        
-                </section>
-                <span id="divideError"></span>
-                <label for="divideAnswer"></label><br>
-                        <input type="text" id="divideAnswer">
-                <button id="checkDivide" onclick="divideCheck()">Tarkista vastaus</button>
-                <p><span id="divideAsnwerCheck"></span></p>
-
-
-            </div>
-            <div class="tausta col border border-primary min-vh-100">
-                <h1 class="text-center">Sanalliset yllärit</h1>
-                <p></p>
-
-
-
-            </div>
-            <div class="tausta col border border-primary min-vh-100">
-                <h1 class="text-center">Prosenttilaskut</h1>
-                <p>Alla näet sanallisia prosenttilaskuja.Valitse oikea vastaus vaihtoehdoista.</p>
-                <button id="prosentStartButton" onclick="prosentButton()">Aloita lasku</button>
+                <h1 class="text-center">Matikka pähkinät</h1>
+                <p id="pText" class="text-center mb-4 p-4 introText">Alla näet erilaisia laskuja. Valitse vaihtoehdoista vastaus.
+                    Tehtäviä on yhteensä 5kpl ja alla näet mones tehtävä on menossa.</p> 
+                    <p id="pCounterText" class="text-center"><span id="counter">0</span> / 5</span></p>
                 
-                <section id="prosentTaskOne">
-                <p>120 euroa maksavat kottikärryt myydään 40%:n alennuksella . Kuinka monta euroa alennus on?</p>
-                <input id="prosentWrongA" type="button" onclick="prosentTaskOneA()" value="40e"><br>
-                <input id="prosentRightB" type="button" onclick="prosentTaskOneB()" value="48e"><br>
-                <input id="prosentWrongC" type="button" onclick="prosentTaskOneC()"value="72e"><br>
+                <button id="startButton" class="position-absolute top-25 start-50 translate-middle">Aloita
+                    laskut</button>
 
-                    <p><span id="prosentAnswerTaskOne"></span></p>
-             </section>
+                <div id="percenTask" class="inputField">
 
-             <section id="prosentTaskTwo">
-                 <p> Kymmenen euron aurinkolasit myydään 25%:n alennuksella. Kuinka monta euroa on alennus?</p>
-                 <input id="prosentRightTwoA"type="button" onclick="prosentTaskTwoA()"value="2,5e"><br>
-                 <input id="prosentWrongTwoB" type="button" onclick="prosentTaskTwoB()"value="4e"><br>
-                 <input id="prosentWrongTwoC"type="button" onclick="prosentTaskTwoC()"value="7,5e"><br>
-                 <p><span id="prosentAnswerTaskTwo"></span></p>
+                    <p class=" introText"><span id="price"></span> euroa maksavat kottikärryt myydään <span
+                            id="percent"></span>%:n alennuksella . Kuinka monta euroa alennus on?</p><br>
 
-             </section>
+                    <input id="percentA" type="button" value="0"><br>
+                    <input id="percentB" type="button" value="0"><br>
+                    <input id="percentC" type="button" value="0"><br>
 
-             <section id="prosentTaskThree">
-                 <p>sadan euron musiikkisoittimesta saa 20 prosenttia alennusta. Kuinka paljon on alennus ja mikä on tuotteen alennettu hinta?</p>
-                 <input id="prosentWrongThreeA" type="button" onclick="prosentTaskThreeA()"value="10e alennusta ja alennettu hinnta 90e"><br>
-                 <input id="prosentRightThreeB" type="button" onclick="prosentTaskThreeB()"value="20e alennusta ja alennettu hinta 80e"><br>
-                 <input id="prosentWrongThreeC" type="button" onclick="prosentTaskThreeC()"value="5e alennusta ja alennettu hunta 75e"><br>
-                 <p><span id="prosentAnswerTaskThree"></span></p>
+                    <p class="text-center answerText"><span id="percentAnswerText"></span></p>
 
-             </section>
+                </div>
+
+                <div id="divideTask" class="inputField">
+                    <p class="introText">Miehellä on käytössään <span id="priceDivide"></span> euroa.
+                        Hän halusi palkata mahdollisimman monta
+                        koululaista kesätöihin puutarhaansa viideksi päiväksi, juhannusviikolle. Palkkaa hän lupasi
+                        maksaa <span id="moneyAmount"></span> € kullekin koululaiselle. Kuinka monta koululaista mies
+                        pystyi palkkaamaan?</p><br>
+                        
+                    <input id="divideA" type="button" value="0"><br>
+                    <input id="divideB" type="button" value="0"><br>
+                    <input id="divideC" type="button" value="0"><br>
+                   
+                    <p class="text-center answerText"><span id="divideAnswerText"></span></p><br>
+
+                </div>
+
+                <div id="multiplicationTask" class="inputField">
+                    <p class="introText">laske <span id="MultiplicationNumber"></span> x <Span
+                            id="MultiplicationNumberTwo"></Span></p><br>
+                    <input id="multiplicationA" type="button" value="0"><br>
+                    <input id="multiplicationB" type="button" value="0"><br>
+                    <input id="multiplicationC" type="button" value="0"><br>
+                    <p class="text-center answerText"><span id="multiplicationAnswerText"></span></p><br>
+
+                </div>
+
+                <div id="verbalTask" class="inputField">
+                    <p class="introText"> Markkulanmäen rivitalossa asuu neljä perhettä joissa kaikissa on
+                        <span id="personsInFamily"></span> henkilöä ja kaksi perhettä joissa kummassakin on <span
+                            id="personsInFamilyTwo"></span> henkilöä Kuinka monta henkilöä sinisessä talossa asuu.<br>
+                    </p>
+                    <input id="verbalA" type="button" value="0"><br>
+                    <input id="verbalB" type="button" value="0"><br>
+                    <input id="verbalC" type="button" value="0"><br>
+                    <p class="text-center answerText"><span id="verbalAnswerText"></span></p><br>
+
+                </div>
+
+                <div id="circleTask" class="inputField">
+                    <p class="introText"> Markku juoksee ympyrän muotoisella radalla kilpaa, jonka piiri on
+                        800m Kuinka pitkän matkan hän juoksisi, jos hän juoksisi <span id="meters"></span> metrin
+                        kauhempana sisäreunasta? </p><br>
+                    <input id="circleA" type="button" value="0"><br>
+                    <input id="circleB" type="button" value="0"><br>
+                    <input id="circleC" type="button" value="0"><br>
+                    <p class="text-center answerText"><span id="circleAnswerText"></span></p><br>
+
+                </div>
+                <div id="loading">
+
+
+                    <h1 data-text="Loading......">Loading......</h1><br>
+
+                    <p>Koulutetut hamsterimme ratkovat pähkinöitäsi.<br> Siis vastauksiasi....</p>
+
+
+                </div>
+
+                <div id="loppuArvio" class="inputField">
+                    <div id="imageRewards">
+                        <p class="text-center"><span id="rewardsText"></span><br>
+                            Sait oikein <span id="correctAnswers"></span> / 5.<br>
+                            <span id="infoText"></span>
+                        </p><br>
+                        <span id="imgRewardHere"></span>
+                        <button id="newStart">Aloita laskut</button>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="animation-container">
+                    <div class="elements">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+
+
+                    </div>
+
+                </div>
 
 
 
             </div>
-            <div class="tausta col border border-primary min-vh-100">
-                <h1 class="text-center">vähennyslasku</h1>
-                <p></p>
 
 
-
-            </div>
 
         </div>
     </div>
+    <div id="bottomtausta">
+        <div class="custom-shape-divider-bottom-1650785033">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+
     <div class="container-fluid">
         <div class="row row-cols-1  row-cols-md-3">
             <div class="col bg-dark text-white">
-                <p class="text-center py-2 mt-2 fs-6">Tietojenkäsittelyn tutkinto-ohjelman (TIK22KM)</p>
+                <p class="text-center py-2 mt-2 fs-6">Tietojenkäsittelyn tutkinto-ohjelma (TIK22KM)</p>
             </div>
             <div class="col bg-dark text-white">
                 <p class="text-center py-2 mt-0 fs-6">Informaatioteknologia, Oamk</p>
             </div>
             <div class="col bg-dark text-white">
-                <p class="text-center py-2 mt-0 fs-6">Aloitus vuosi 2022</p>
+                <p class="text-center py-2 mt-0 fs-6">Aloitusvuosi 2022</p>
             </div>
         </div>
     </div>
+
+
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="/js/matikka46.js"></script>
+    <script src="./js/matikka46.js"></script>
 </body>
 
 </html>

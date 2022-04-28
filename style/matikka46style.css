@@ -1,35 +1,882 @@
-#multiRadio{
-    display: none;
-}
-#checkMultiply{
-    display: none;
-}
-#divideTaskA{
-display: none;
-
-}
-#divideTaskB{
-display: none;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(224, 119, 5), rgb(244, 88, 244));
 }
 
-#divideTaskC{
-
-display: none;
-}
-#divideAnswer{
-    display: none;
+h1 {
+    font-family: 'Permanent Marker';
+    font-size: 3em;
 }
 
-#checkDivide{
-    display: none;
+.countersize{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+
+    font-size: 2em;
 }
-#prosentTaskOne{
-    display: none;
+
+
+
+.inputField {
+   background-image: url(../image/abstract-g47b9c359c_1280.png);
+   background-size: 100% 60%;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: #a02fd8;
+    border: black 1px solid;
+    border-radius: 10px;
+    font-size: 0.8em;
+    width: 75%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    left: 50%;
+    top: 70%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
 }
-#prosentTaskTwo{
-    display: none;
+
+
+.introText {
+    
+    font-size: 1em;
+    margin:auto;
+    padding: 5px;
+    text-align: center;
+    
+
+
 }
-#prosentTaskThree{
-    display: none;
+
+.answerText {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: auto;
 }
+
+#percenTask {
+    display: none;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+   
+}
+
+#divideTask {
+    display: none;
+    font-size: 0.7em;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#multiplicationTask {
+    display: none;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+#verbalTask {
+    display: none;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+#circleTask {
+    display: none;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+
+div.tausta input {
+    width: 55%;
+    margin-left: 25%;
+    margin-bottom: 0%;
+
+}
+
+#loading {
+    display: none;
+    font-size: 0.7em;
+    font-family: 'Permanent Marker';
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+#loading p {
+    color: rgb(255, 198, 42);
+    font-size: 1.5em;
+}
+
+#loppuArvio {
+    display: none;
+    font-family: 'Permanent Marker';
+    color: #FFFFFF;
+    background-size: 100% 100%;
+    font-size: 0.8em;
+    background-color: #a02fd8;
+    border: #71219a 5px solid;
+    border-radius: 10%;
+    top: 72%;
+    animation: example 6s forwards;
+   
+    
+}
+
+#loading h1 {
+    text-transform: uppercase;
+    color: grey;
+    border-bottom: 16px solid grey;
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+
+}
+
+#loading h1:before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    color: rgb(255, 198, 42);
+    overflow: hidden;
+    border-bottom: 16px solid rgb(255, 198, 42);
+    animation: animate 10s linear infinite;
+}
+
+#bottomtausta {
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1650785033 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1650785033 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 50px;
+    /*https://www.shapedivider.app/*/
+}
+
+.custom-shape-divider-bottom-1650785033 .shape-fill {
+    fill: #BD10E047;
+}
+
+#imageRewards {
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgreward {
+
+    height: 100px;
+    width: 100px;
+    border: rgb(223, 219, 18) 3px solid;
+    border-radius: 50%;
+
+}
+
+.fish {
+    background-color: aqua;
+}
+
+.puppy {
+    background-color: rgb(224, 166, 166);
+}
+
+.cat {
+    background-color: rgb(255, 0, 242);
+}
+
+.monster {
+    background-color: rgb(20, 95, 37);
+}
+
+.hamster {
+
+    background-color: rgb(199, 90, 18);
+}
+
+.goat {
+    background-color: blue;
+}
+
+#newStart {
+    position: absolute;
+    height: 50px;
+    left: 55%;
+    top: 65%;
+    border-radius: 10%;
+    border: black 2px solid;
+
+
+}
+
+.elements div {
+    position: absolute;
+    background: transparent;
+    border: black 6px solid;
+}
+
+.elements div:nth-child(1) {
+    top: 20%;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+    animation: ball 10s linear infinite;
+}
+
+
+.elements div:nth-child(2) {
+    top: 95%;
+    left: 10%;
+    width: 90px;
+    height: 90px;
+    animation: ball 9s linear infinite;
+}
+
+.elements div:nth-child(3) {
+    top: 95%;
+    left: 65%;
+    width: 70px;
+    height: 70px;
+    animation: ball 7s linear infinite;
+}
+.elements div:nth-child(4) {
+    top: 15%;
+    left: 65%;
+    width: 80px;
+    height: 80px;
+    animation: ball 7s linear infinite;
+}
+
+
+.custom-shape-divider-bottom-1650782958 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 277px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@keyframes ball{
+
+    0%{
+        transform: scale(0) translateY(-90px) rotate(360deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90) rotate(-180deg);
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (min-width: 450px){
+
+    h1 {
+        font-size: 3em;
+    }
+    .countersize{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 25%;
+        left: 48%;
+    
+        font-size: 2em;
+    }
+    
+    
+    .inputField {
+ 
+        font-size: 1em;
+        width: 75%;
+        height: auto;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+    }
+    
+    
+    .introText {
+        
+        font-size: 1.2em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
+        font-size: 1.1em;
+    }
+    
+  
+    
+    #divideTask {
+
+ 
+        font-size: 1em;
+       
+    }
+
+    
+    
+    div.tausta input {
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
+    }
+    
+    #loading {
+        font-size: 1.2em;
+        top: 50%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1em;
+        height: 35%; 
+        top: 50%;   
+    }
+
+    
+
+    
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 180px;
+    }
+   
+
+    
+    #newStart {
+        height: 65px;
+        left: 55%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 10%;
+        width: 80px;
+        height: 80px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 75%;
+        left: 10%;
+        width: 90px;
+        height: 90px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 85%;
+        left: 65%;
+        width: 70px;
+        height: 70px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 15%;
+        left: 65%;
+        width: 80px;
+        height: 80px;
+
+    }
+  
+  
+
+}
+@media screen and (min-width: 530px){
+
+    h1 {
+        font-size: 4em;
+    }
+    
+    
+    
+    .inputField {
+
+        font-size: 1em;
+        width: 75%;
+        height: auto;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+    }
+    
+    
+    .introText {
+        
+        font-size: 1.3em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
+        font-size: 1.3em;
+    }
+    
+
+    
+    #divideTask {
+
+        font-size: 1em;
+    
+    }
+    
+    
+    div.tausta input {
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
+    }
+    
+    #loading {
+        font-size: 1.em;
+        top: 60%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1.1em;
+        width: auto;
+        top: 50%;    
+    }
+
+    
+
+    
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 200px;
+    }
+
+    
+    #newStart {
+        height: 65px;
+        left: 35%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 15%;
+        width: 125px;
+        height: 125px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 75%;
+        left: 10%;
+        width: 100px;
+        height: 100px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 85%;
+        left: 80%;
+        width: 75px;
+        height: 75px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 35%;
+        left: 80%;
+        width: 80px;
+        height: 80px;
+
+    }
+  
+  
+
+}
+
+
+@media screen and (min-width: 992px){
+
+    h1 {
+        font-size: 4.5em;
+    }
+    
+    
+    
+    .inputField {
+
+        font-size: 1em;
+        width: 75%;
+        height: auto;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+    }
+    
+    
+    .introText {
+        
+        font-size: 1.5em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
+        font-size: 1.4em;
+    }
+    
+  
+    
+    #divideTask {
+
+        font-size: 1em;
+        
+    }
+    
+    
+    div.tausta input {
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
+    }
+    
+    #loading {
+        font-size: 1.em;
+        top: 50%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1.3em;
+        width: auto;
+       
+        top: 50%;    
+    }
+
+    
+
+    
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 220px;
+    }
+
+    
+    #newStart {
+        height: 65px;
+        left: 35%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 15%;
+        width: 150px;
+        height: 150px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 75%;
+        left: 10%;
+        width: 125px;
+        height: 125px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 75%;
+        left: 80%;
+        width:100px;
+        height: 100px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 15%;
+        left: 85%;
+        width: 80px;
+        height: 80px;
+
+    }
+  
+  
+
+}
+
+
+@media screen and (min-width: 1312px){
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    .countersize{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 25%;
+        left: 48%;
+
+        font-size: 2em;
+    }
+    
+    
+    
+    .inputField {
+
+        font-size: 1em;
+        border: rgb(71, 3, 128) 4px solid;
+        width: 50%;
+        height: auto;
+        margin: 8px;
+        padding: 8px;
+        left: 50%;
+        top: 55%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+    }
+    
+    
+    .introText {
+        
+        font-size: 1.5em;
+        margin-top: 0;
+        
+    
+    
+    }
+    
+    .answerText {
+        font-size: 1.4em;
+    }
+    
+  
+    
+    #divideTask {
+
+        font-size: 1em;
+        
+    }
+    
+    
+    div.tausta input {
+        font-size: 1.2em;
+        width: 55%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+    
+    }
+    
+    #loading {
+        font-size: 1.em;
+        top: 50%;
+        left: 50%;
+
+    
+    }
+    
+    #loading p {
+        font-size: 1.2em;
+    }
+    
+    #loppuArvio {
+        background-size: 100% 100%;
+        font-size: 1.3em;
+        border-radius:20px;
+        width: auto;
+        height: 38%;
+       
+        top: 50%;    
+    }
+
+    
+
+    
+    .custom-shape-divider-bottom-1650785033 svg {
+        height: 250px;
+    }
+
+    
+    #newStart {
+        height: 65px;
+        left: 40%;
+        top: 70%;
+
+    
+    
+    }
+    
+    .elements div:nth-child(1) {
+        top: 20%;
+        left: 15%;
+        width: 200px;
+        height: 200px;
+
+    }
+    
+    
+    .elements div:nth-child(2) {
+        top: 75%;
+        left: 10%;
+        width: 150px;
+        height: 150px;
+
+    }
+    
+    .elements div:nth-child(3) {
+        top: 80%;
+        left: 65%;
+        width: 125px;
+        height: 125px;
+
+    }
+    .elements div:nth-child(4) {
+        top: 30%;
+        left: 80%;
+        width: 100px;
+        height: 100px;
+
+    }
+  
+  
+
+}
+
+
+
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+/*     https://www.youtube.com/watch?v=Ebn7YlsHqPo        loading animation opetusvideo*/
+
+/*https://www.youtube.com/watch?v=AIYAbO5wHgM     ball animation opetusvideo*/
