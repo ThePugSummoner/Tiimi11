@@ -233,7 +233,7 @@ buttonStart.addEventListener("click", taskStartButton);
 
 
 function taskStartButton() {
-
+    
     //percent laskukaavat
     let randomPriceNumber = getRndInteger(80, 200);
     let randomPercent = getRndInteger(20, 60);
