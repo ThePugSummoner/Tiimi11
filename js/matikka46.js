@@ -216,12 +216,12 @@ let mathValues = [
 let inputIds = [];
 let rightAnswers = [];
 let wrongAnswers = [];
-let rewardImages = ['<img src="./image/goat-g6fdc2112e_640.png"class="imgreward goat" alt="goat">',
-    '<img src="./image/fish-g38577bb5a_640.png"class="imgreward fish" alt="fish">',
-    '<img src="./image/puppy-ga9487c155_640.png"class="imgreward puppy" alt="puppy">',
-    '<img src="./image/cat-g9cc78c623_640.png"class="imgreward cat" alt="cat">',
-    '<img src="./image/monster-gbc997e1d4_640.png"class="imgreward monster" alt="monster">',
-    '<img src="./image/hamster-ga35ef1ede_640.png" class="imgreward hamster"alt="hamster">'];
+let rewardImages = ['<img src="../images/goat-g6fdc2112e_640.png"class="imgreward goat" alt="goat">',
+    '<img src="../images/fish-g38577bb5a_640.png"class="imgreward fish" alt="fish">',
+    '<img src="../images/puppy-ga9487c155_640.png"class="imgreward puppy" alt="puppy">',
+    '<img src="../images/cat-g9cc78c623_640.png"class="imgreward cat" alt="cat">',
+    '<img src="../images/monster-gbc997e1d4_640.png"class="imgreward monster" alt="monster">',
+    '<img src="../images/hamster-ga35ef1ede_640.png" class="imgreward hamster"alt="hamster">'];
 
 
 let button = document.querySelector("#newStart");
@@ -233,7 +233,7 @@ buttonStart.addEventListener("click", taskStartButton);
 
 
 function taskStartButton() {
-
+    
     //percent laskukaavat
     let randomPriceNumber = getRndInteger(80, 200);
     let randomPercent = getRndInteger(20, 60);

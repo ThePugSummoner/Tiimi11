@@ -139,6 +139,21 @@ footer div p{
   margin: 0.5em;
 }
 
+.ulmatikka46{
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;  
+}
+.specialh2{
+  
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
   
   footer {
