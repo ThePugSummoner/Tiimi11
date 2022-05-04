@@ -112,6 +112,17 @@ a {
   color: rgb(46, 45, 45);
 }
 
+#wiki {
+  color:rgb(46, 45, 45);
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+#wiki:hover {
+  color: rgb(144, 144, 250);
+}
+
 h1:hover, a:hover {
   color: rgb(144, 144, 250);
 }
