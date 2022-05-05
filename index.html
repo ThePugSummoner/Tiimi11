@@ -1,207 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-    <!-- CSS määrittelyt -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!--Navbar alku-->
-      <nav class="navbar fixed-top" style="width: fit-content;">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- CSS määrittelyt -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navbar alku-->
+  <nav class="navbar fixed-top" style="width: fit-content;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Web-Projekti Tiimi 11</h5>
       </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Web-Projekti Tiimi 11</h5>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="nav nav-pills nav-flush flex-column mb-auto text-right" data-bs-dismiss="offcanvas">
-              <li>
-                <a href="#scrollspyHeading1" class="nav-link py-3">
-                  <i class="fa-solid fa-house"></i> 
-                  <span>Etusivu</span>
-                </a>
-              </li>
-              <li>
-                <a href="#scrollspyHeading2" class="nav-link py-3">
-                  <i class="fa-solid fa-plus-minus"></i>
-                  <span>Matikkapaketti 1–3-luokka</span>
-                </a>
-              </li>
-              <li>
-                <a href="#scrollspyHeading3" class="nav-link py-3">
-                  <i class="fa-solid fa-percent"></i>
-                  <span>Matikkapaketti 4–6-luokka</span>
-                </a>
-              </li>
-              <li>
-                <a href="#scrollspyHeading4" class="nav-link py-3">
-                  <i class="fa-solid fa-book-atlas"></i>
-                  <span>Maantieto</span>
-                </a>
-              </li>
-              <li>
-                <a href="#scrollspyHeading5" class="nav-link py-3">
-                  <i class="fa-solid fa-book-open"></i>
-                  <span>Historia</span>
-                </a>
-              </li>
-              <li>
-                <a href="#scrollspyHeading6" class="nav-link py-3">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <span>Tietoa</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <!--Navbar loppu-->
+      <div class="offcanvas-body">
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-right" data-bs-dismiss="offcanvas">
+          <li>
+            <a href="#scrollspyHeading1" class="nav-link py-3">
+              <i class="fa-solid fa-house"></i>
+              <span>Etusivu</span>
+            </a>
+          </li>
+          <li>
+            <a href="#scrollspyHeading2" class="nav-link py-3">
+              <i class="fa-solid fa-plus-minus"></i>
+              <span>Matikkapaketti 1–3-luokka</span>
+            </a>
+          </li>
+          <li>
+            <a href="#scrollspyHeading3" class="nav-link py-3">
+              <i class="fa-solid fa-percent"></i>
+              <span>Matikkapaketti 4–6-luokka</span>
+            </a>
+          </li>
+          <li>
+            <a href="#scrollspyHeading4" class="nav-link py-3">
+              <i class="fa-solid fa-book-atlas"></i>
+              <span>Maantieto</span>
+            </a>
+          </li>
+          <li>
+            <a href="#scrollspyHeading5" class="nav-link py-3">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Historia</span>
+            </a>
+          </li>
+          <li>
+            <a href="#scrollspyHeading6" class="nav-link py-3">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Tietoa</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar loppu-->
   <div>
     <div class="min-vh-100">
       <h1 id="scrollspyHeading1">Etusivu</h1>
-      <p>Sivusto on suunnattu alakoululaisille 1–6-luokkalaiset. Sivustolla on 4 erilaista tehtäväpakettia. Jokaisessa tehtävä paketissa on 5 kysymästä ja jokaista kysymystä kohden on 3–5 
-        erilaista vastausvaihtoehtoa. Tehtäväpaketit koostuvat maantiedosta, historiasta, matematiikasta (1–3-luokkalaiset) ja  matikkapähkinästä ( 4–6-luokkalaisille).
-        Oppilas voi näin testata omaa oppimistaan leikkimielissesti ja opettaja voi myös käyttää sivustoa haluamiensa oppilaiden kanssa.<br><br>
-        "Lapselle muodostuu totuudenmukainen kuva itsestään, kun hän huomaa oppivansa uutta ja saa aitoja onnistumisen kokemuksia sekä itsekseen että perheen ja muiden lasten kanssa.
-          Vanhemman on hyvä tarjota lapselle tilaisuuksia opetella uusia asioita. 
-          Uuden harjoittelu kannattaa aloittaa asioista, jotka sujuvat lapselta luontaisesti ja siirtyä onnistumisten kautta lapselle vaikeampiin taitoihin. 
-          Toisaalta epäonnistumisia ei kannata pelätä, eikä lapsen osaamista pidä verrata toisten saman ikäisten lasten taitoihin."<br><a href="https://www.mll.fi/vanhemmille/tietoa-lapsiperheen-elamasta/elamaa-kouluikaisen-kanssa/koulu-alkaa/lapsi-harjoittelee-ja-oppii/"target="_new">Mannerheimin lastensuojeluliitto</a><br>
-        <br>Sivustolla oppilas voi turvallisesti lähteä testaamaan omaa tietämystään ja saada onnistumisen tunteita! Samalla myös huomata, mitkä asiat eivät vielä aivan onnistu.<br><br>
-        Sivustolle ei tarvitse erikseen tehdä tunnuksia tai kirjautua. Oppilas voi suoraan lähteä tekemään tehtäviä! </p>
+      <p>Sivusto on suunnattu alakoululaisille 1–6-luokkalaiset. Sivustolla on 4 erilaista tehtäväpakettia. Jokaisessa
+        tehtävä paketissa on 5 kysymästä ja jokaista kysymystä kohden on 3–5
+        erilaista vastausvaihtoehtoa. Tehtäväpaketit koostuvat maantiedosta, historiasta, matematiikasta
+        (1–3-luokkalaiset) ja matikkapähkinästä ( 4–6-luokkalaisille).
+        Oppilas voi näin testata omaa oppimistaan leikkimielissesti ja opettaja voi myös käyttää sivustoa haluamiensa
+        oppilaiden kanssa.</p>
+        <p>"Lapselle muodostuu totuudenmukainen kuva itsestään, kun hän huomaa oppivansa uutta ja saa aitoja onnistumisen
+        kokemuksia sekä itsekseen että perheen ja muiden lasten kanssa.
+        Vanhemman on hyvä tarjota lapselle tilaisuuksia opetella uusia asioita.
+        Uuden harjoittelu kannattaa aloittaa asioista, jotka sujuvat lapselta luontaisesti ja siirtyä onnistumisten
+        kautta lapselle vaikeampiin taitoihin.
+        Toisaalta epäonnistumisia ei kannata pelätä, eikä lapsen osaamista pidä verrata toisten saman ikäisten lasten
+        taitoihin."<br><a
+          href="https://www.mll.fi/vanhemmille/tietoa-lapsiperheen-elamasta/elamaa-kouluikaisen-kanssa/koulu-alkaa/lapsi-harjoittelee-ja-oppii/"
+          target="_new">Mannerheimin lastensuojeluliitto</a></p>
+        <p>Sivustolla oppilas voi turvallisesti lähteä testaamaan omaa tietämystään ja saada onnistumisen tunteita!
+        Samalla myös huomata, mitkä asiat eivät vielä aivan onnistu.</p>
+        <p>Sivustolle ei tarvitse erikseen tehdä tunnuksia tai kirjautua. Oppilas voi suoraan lähteä tekemään tehtäviä!
+      </p>
 
       <img id="lapset" src="images/etusivunkuva.jpg" class="rounded mx-auto d-block my-5" alt="">
     </div>
     <div class="min-vh-100">
-      <a href="pages/matikka13.html"><h1 id="scrollspyHeading2">Matikka 1-3-luokka</h1></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
-    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
-    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
-    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
-    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
-    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
-    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
-    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
-    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
-    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+      <a href="pages/matikka13.html">
+        <h1 id="scrollspyHeading2">Matikka 1-3-luokka</h1>
+      </a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate
+        reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis
+        alias consequuntur libero labore voluptatem.
+        Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio
+        reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe
+        culpa minima vel delectus!
+        Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur
+        voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore
+        maxime?
+        Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt
+        exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque
+        adipisci odit?
+        Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto
+        harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error
+        fugit laudantium velit?
+        Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos
+        nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+        Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in
+        neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+        Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam
+        ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde
+        quas?
+        Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque
+        sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+        Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe
+        quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
     </div>
     <div class="divmatikka46 d-flex justify-content-center min-vh-100">
-      <div >
-      <a href="pages/matikka46.html"><h1 id="scrollspyHeading3">Matikkapähkinät</h1></a>
-        <p>Matematiikan pääalueet syntyivät käytännön tarpeista. Laskutaito oli tarpeellinen niin kaupankäynnissä, maanmittauksessa kuin tähtitieteellisten tapahtumien ennustamisessakin. Matematiikka on siis alun perin muiden tieteiden (lähinnä luonnontieteiden) työkalu ja tutkimustulosten tarkka ilmaisuväline. Matematiikan avulla voidaan teoreettisesti tarkastella käytännössä havaittuja asioita ja tehdä näistä tutkimustuloksista johtopäätöksiä.<br><br>
-          Matematiikan vanhimpia osa-alueita ovat aritmetiikka eli laskuoppi sekä geometria. Aritmetiikka käsittelee numeroita ja lukuja, joista ensimmäisenä on otettu käyttöön positiiviset kokonaisluvut eli luonnolliset luvut, sekä niillä suoritettavia laskutoimituksia. Lukukäsitteen myöhemmät laajennukset ovat johtaneet muidenkin lukulajien kuten reaalilukujen ja kompleksilukujen käyttöönottoon. Lukuteoria tutkii lukujen syvempiä ominaisuuksia.<br>
-          <a href="https://fi.wikipedia.org/wiki/Matematiikka"target="_new">Matematiikka - Wikipedia</a><br><br>
-          Matikkapähkinät on suunnattu 4–6-luokkalaisille. Matematiikan tehtäviä on 5 kpl ja jokaisesta oikeasta vastauksesta saa yhden pisteen. Heti vastattuasi näet, menikö tehtävä oikein vai ei. Jokaisessa tehtävässä on yksi oikea vastaus.
+      <div>
+        <a href="pages/matikka46.html">
+          <h1 id="scrollspyHeading3">Matikkapähkinät</h1>
+        </a>
+        <p>Matematiikan pääalueet syntyivät käytännön tarpeista. Laskutaito oli tarpeellinen niin kaupankäynnissä,
+          maanmittauksessa kuin tähtitieteellisten tapahtumien ennustamisessakin. Matematiikka on siis alun perin muiden
+          tieteiden (lähinnä luonnontieteiden) työkalu ja tutkimustulosten tarkka ilmaisuväline. Matematiikan avulla
+          voidaan teoreettisesti tarkastella käytännössä havaittuja asioita ja tehdä näistä tutkimustuloksista
+          johtopäätöksiä.<br><br>
+          Matematiikan vanhimpia osa-alueita ovat aritmetiikka eli laskuoppi sekä geometria. Aritmetiikka käsittelee
+          numeroita ja lukuja, joista ensimmäisenä on otettu käyttöön positiiviset kokonaisluvut eli luonnolliset luvut,
+          sekä niillä suoritettavia laskutoimituksia. Lukukäsitteen myöhemmät laajennukset ovat johtaneet muidenkin
+          lukulajien kuten reaalilukujen ja kompleksilukujen käyttöönottoon. Lukuteoria tutkii lukujen syvempiä
+          ominaisuuksia.<br>
+          <a href="https://fi.wikipedia.org/wiki/Matematiikka" target="_new">Matematiikka - Wikipedia</a><br><br>
+          Matikkapähkinät on suunnattu 4–6-luokkalaisille. Matematiikan tehtäviä on 5 kpl ja jokaisesta oikeasta
+          vastauksesta saa yhden pisteen. Heti vastattuasi näet, menikö tehtävä oikein vai ei. Jokaisessa tehtävässä on
+          yksi oikea vastaus.
           Lopuksi saat ilmoituksen, montako pistettä sait testistä, ja sitä vastaavan kuvan!<br><br>
           Tehtäviä pääset tekemään klikkaamalla "Matikkapähkinät" otsikkoa.
         </p>
-          <h2 class="specialh2">Matematiikan tehtävät koostuvat seuraavista:</h2>
-          
-          <ul class="ulmatikka46 ">
-            <li >Sanallinen prosenttilasku</li>
-            <li>Sanallinen jakolasku</li>
-            <li>Kertolasku</li>
-            <li>Sanallinen tehtävä</li>
-            <li>Ympyrän piiri</li>
+        <h2 class="specialh2">Matematiikan tehtävät koostuvat seuraavista:</h2>
 
-          </ul>
+        <ul class="ulmatikka46 ">
+          <li>Sanallinen prosenttilasku</li>
+          <li>Sanallinen jakolasku</li>
+          <li>Kertolasku</li>
+          <li>Sanallinen tehtävä</li>
+          <li>Ympyrän piiri</li>
 
-        
+        </ul>
+
+
       </div>
     </div>
     <div class="min-vh-100">
-      <a href="pages/maantieto1.html"><h1 id="scrollspyHeading4">Maantieto</h1></a>
-      <p>Maantiede (kreik. geografia, 'maan piirtäminen') on tieteenala, joka tutkii Maan pintaa ja maan pinnalla esiintyviä sekä ihmisen että luonnon aikaansaamia ilmiöitä. 
-        Maantiede etsii näiden ilmiöiden säännönmukaisuuksia ja syitä sekä eri ilmiöiden välisiä vuorovaikutussuhteita. Maantieteen tutkimuskohteita ovat esimerkiksi Maan elollisen ja elottoman luonnon prosessit, 
-        niiden historia, väestö, kulttuuri, asutus, talous ja ympäristö sekä ympäristönmuutokset kaikissa ajan ja alueiden mittakaavoissa. Maan pinnan lisäksi maantieteessä käsitellään myös maan rakennetta ja maapalloa ympäröivää avaruutta, 
-        mutta näiden tarkempi tutkiminen kuuluu tähtitieteen ja geologian piiriin. Yhteistä näille moninaisille tutkimusnäkökulmille on alueellinen tarkastelutapa.
-        Maantieteelle ominaista on ilmiöiden spatiaalinen eli tilaan liittyvä ja temporaalinen lähestymistapa, tämä korostus erottaa sen muista lähitieteistä. 
-        Alueet ja paikat ovat maantieteessä keskeisiä. Tärkeitä työvälineitä ja toimintamenetelmiä maantieteessä ovat esimerkiksi kartat, GIS eli paikkatietojärjestelmä, kaukokartoitus, satelliittipaikannus ja kenttätutkimus.
-        Maantieteeseen kuuluviin ilmiöihin aletaan Suomessa tutustua peruskoulun ensimmäisillä luokilla, missä sitä opetetaan osana ympäristöoppia; sen jälkeen se on omana oppiaineenaan (viidenneltä luokalta lähtien), jonka nimenä on maantieto. 
-        Lukiossa, kun opetus on jo lähempänä tieteellistä näkökulmaa, oppiaine on nimeltään maantiede. Puhekielessä oppiaine tunnetaan kuitenkin vielä erittäin laajalti vanhalla nimellään myös lukioissa. Oppiaine kuuluu ympäristö- ja luonnontieteellisten aineiden joukkoon.
+      <a href="pages/maantieto1.html">
+        <h1 id="scrollspyHeading4">Maantieto</h1>
+      </a>
+      <p>Maantiede (kreik. geografia, 'maan piirtäminen') on tieteenala, joka tutkii Maan pintaa ja maan pinnalla
+        esiintyviä sekä ihmisen että luonnon aikaansaamia ilmiöitä.
+        Maantiede etsii näiden ilmiöiden säännönmukaisuuksia ja syitä sekä eri ilmiöiden välisiä vuorovaikutussuhteita.
+        Maantieteen tutkimuskohteita ovat esimerkiksi Maan elollisen ja elottoman luonnon prosessit,
+        niiden historia, väestö, kulttuuri, asutus, talous ja ympäristö sekä ympäristönmuutokset kaikissa ajan ja
+        alueiden mittakaavoissa. Maan pinnan lisäksi maantieteessä käsitellään myös maan rakennetta ja maapalloa
+        ympäröivää avaruutta,
+        mutta näiden tarkempi tutkiminen kuuluu tähtitieteen ja geologian piiriin. Yhteistä näille moninaisille
+        tutkimusnäkökulmille on alueellinen tarkastelutapa.
+        Maantieteelle ominaista on ilmiöiden spatiaalinen eli tilaan liittyvä ja temporaalinen lähestymistapa, tämä
+        korostus erottaa sen muista lähitieteistä.
+        Alueet ja paikat ovat maantieteessä keskeisiä. Tärkeitä työvälineitä ja toimintamenetelmiä maantieteessä ovat
+        esimerkiksi kartat, GIS eli paikkatietojärjestelmä, kaukokartoitus, satelliittipaikannus ja kenttätutkimus.
+        Maantieteeseen kuuluviin ilmiöihin aletaan Suomessa tutustua peruskoulun ensimmäisillä luokilla, missä sitä
+        opetetaan osana ympäristöoppia; sen jälkeen se on omana oppiaineenaan (viidenneltä luokalta lähtien), jonka
+        nimenä on maantieto.
+        Lukiossa, kun opetus on jo lähempänä tieteellistä näkökulmaa, oppiaine on nimeltään maantiede. Puhekielessä
+        oppiaine tunnetaan kuitenkin vielä erittäin laajalti vanhalla nimellään myös lukioissa. Oppiaine kuuluu
+        ympäristö- ja luonnontieteellisten aineiden joukkoon.
       </p>
-      <a id="wiki" href="https://fi.wikipedia.org/wiki/Maantiede"target="_new">Maantiede - Wikipedia</a>
-    <img id="globe" src="images/hands-600497_640.jpg" class="rounded mx-auto d-block my-5" alt="">
+      <a id="wiki" href="https://fi.wikipedia.org/wiki/Maantiede" target="_new">Maantiede - Wikipedia</a>
+      <img id="globe" src="images/hands-600497_640.jpg" class="rounded mx-auto d-block my-5" alt="">
     </div>
     <div class="min-vh-100">
-      <a href="pages/historia.html"><h1 id="scrollspyHeading5">Historia</h1></a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis alias consequuntur libero labore voluptatem.
-    Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe culpa minima vel delectus!
-    Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore maxime?
-    Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque adipisci odit?
-    Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error fugit laudantium velit?
-    Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
-    Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
-    Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde quas?
-    Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
-    Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
+      <a href="pages/historia.html">
+        <h1 id="scrollspyHeading5">Historia</h1>
+      </a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi deserunt perspiciatis voluptate
+        reprehenderit sit distinctio recusandae repellendus delectus vel. Voluptas voluptatum suscipit pariatur officiis
+        alias consequuntur libero labore voluptatem.
+        Aliquam ab ut, blanditiis consequuntur provident voluptate ea at explicabo excepturi. Tempora nemo distinctio
+        reiciendis perferendis maiores dolorum accusamus. Voluptate eos obcaecati magnam molestias? Voluptatem saepe
+        culpa minima vel delectus!
+        Voluptate aspernatur qui doloremque eaque est hic repellat omnis, blanditiis accusantium sequi, laborum tenetur
+        voluptatum? Accusamus ducimus cum repudiandae nobis in, illo perspiciatis nihil, enim incidunt vel, vero dolore
+        maxime?
+        Enim, perferendis voluptates atque vero sit ipsa eveniet est obcaecati in officia? Porro ratione incidunt
+        exercitationem voluptate animi eos recusandae doloremque? Distinctio, tempore. Modi eos reprehenderit nemo atque
+        adipisci odit?
+        Repellendus, omnis necessitatibus. Sapiente placeat accusamus laborum cumque, tempora saepe autem architecto
+        harum eaque voluptatem consectetur neque nobis dolor ipsa numquam amet quidem dignissimos illum corporis error
+        fugit laudantium velit?
+        Cupiditate ducimus odit culpa. Dolore blanditiis rerum tenetur doloremque, autem commodi quo culpa fugit eos
+        nisi placeat provident sint est ratione similique! Necessitatibus quasi rem earum, harum doloremque vero vel!
+        Ut pariatur nemo, odio maiores eveniet natus obcaecati libero commodi, incidunt, sequi non vero iure expedita in
+        neque. Totam excepturi earum quas optio voluptate, debitis repellat quaerat consectetur. Recusandae, nesciunt?
+        Libero perspiciatis molestiae repudiandae similique optio officia velit est vitae, ipsa sapiente iste quisquam
+        ab ad. Possimus sapiente autem sequi placeat accusamus, nostrum dolorum at, minus voluptatibus, perferendis unde
+        quas?
+        Voluptas minus saepe ex voluptatum molestias harum vitae reiciendis, rem, neque facere at sit et quisquam eaque
+        sunt nihil, incidunt provident? Ad ipsam dolore amet nobis esse, asperiores quae nisi.
+        Vel assumenda, numquam sed quibusdam provident eos, hic quaerat explicabo exercitationem illum iure minus. Saepe
+        quos ex rerum eius, voluptatem ad temporibus, itaque eos a accusamus dolorem odit velit sapiente!</p>
     </div>
     <div class="min-vh-100">
       <h1 id="scrollspyHeading6">Tietoa</h1>
-        <p>Web-projekti tiimi 11 kuuluvat Miisa Sammalkangas, Ilia Zubov, Saku Satokangas ja Tomi Valtanen​.<br>
-        Kaikki ovat osallistuneet etusivun tekemiseen ja tekstien muokkaamiseen.<br><br>
-      Miisan omatekemä sivusto on Matikka 1-3-luokka<br>
-      Ilian omatekemä sivusto on Maantietoa<br>
-    Sakun omatekemä sivusto on Historia <br>
-  Tomin omatekemä sivusto on Matikkapähkinät.</p>
-    <div id="carouselExampleCaptions" class="carousel slide mx-auto d-block my-5" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img id="person1" src="images/bulldog-1047518_640.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Miisa Sammalkangas</h5>
-            <p>Matikka 1-3-luokka</p>
-          </div>
+      <p>Web-projekti tiimi 11 kuuluvat Miisa Sammalkangas, Ilia Zubov, Saku Satokangas ja Tomi Valtanen​.</p>
+        <p>Kaikki ovat osallistuneet etusivun tekemiseen ja tekstien muokkaamiseen. Kahdesta eri tyylistä päätimme yhdessä
+        ottaa projektiimme käyttöön sidebarin.Erillisiä vastuualueita ei ole ollut.</p>
+        <p> Olemme jakaneet tietoa, lähteitä ja erilaisia ajatuksia projektiin liittyen.Telegramin kautta olemme sopineet yhteisistä tapaamisista.</p>
+        <h2 class="specialh2">Web-projekti tiimi 11 omatsivut:</h2>
+        <ul class="ultietoa ">
+          <li>Miisan omatekemä sivusto on Matikka 1-3-luokka</li>
+          <li>Ilian omatekemä sivusto on Maantietoa</li>
+          <li>Sakun omatekemä sivusto on Historia</li>
+          <li>Tomin omatekemä sivusto on Matikkapähkinät</li>
+        </ul>
+        
+        
+      <div id="carouselExampleCaptions" class="carousel slide mx-auto d-block my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
         </div>
-        <div class="carousel-item">
-          <img id="person2" src="images/rottweiler-1535961_640.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Ilia Zubov</h5>
-            <p>Maantietoa</p>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="person1" src="images/bulldog-1047518_640.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Miisa Sammalkangas</h5>
+              <p>Matikka 1-3-luokka</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img id="person3" src="images/puppy-1047521_640.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Saku Satokangas</h5>
-            <p>Historia</p>
+          <div class="carousel-item">
+            <img id="person2" src="images/rottweiler-1535961_640.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ilia Zubov</h5>
+              <p>Maantietoa</p>
+            </div>
           </div>
-        </div>
+          <div class="carousel-item">
+            <img id="person3" src="images/puppy-1047521_640.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Saku Satokangas</h5>
+              <p>Historia</p>
+            </div>
+          </div>
           <div class="carousel-item">
             <img id="person4" src="images/tomivaltanen.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Tomi Valtanen</h5>
               <p>Matikkapähkinät</p>
             </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     </div>
     <footer>
       <div>
@@ -219,5 +307,6 @@
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/0d05d2dbfa.js" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
