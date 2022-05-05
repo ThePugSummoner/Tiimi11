@@ -1,4 +1,4 @@
-
+//Funktiot
 /**
  * Satunnaislukugeneraattori laitetaan pienin haluttu (min) ja suurin haluttu (max)
  * @param {number} min 
@@ -153,7 +153,11 @@ function answerText(rightAnswer, elementId, task) {
     return answer;
 
 }
-
+/**
+ * laskee monesko tehtävä menossa
+ * @param {number} value 
+ * @returns 
+ */
 function taskCounter(value) {
     for (let i = 0; i < 1; i++) {
 
@@ -224,16 +228,26 @@ let rewardImages = ['<img src="../images/goat-g6fdc2112e_640.png"class="imgrewar
     '<img src="../images/hamster-ga35ef1ede_640.png" class="imgreward hamster"alt="hamster">'];
 
 
+/**
+ * aloitus buttonit alussa ja lopussa laitettu Eventlistenereihin ja olemaan samassa funktiossa
+ */
 let button = document.querySelector("#newStart");
 let buttonStart = document.querySelector("#startButton");
 
 button.addEventListener("click", taskStartButton);
 buttonStart.addEventListener("click", taskStartButton);
 
-
+/**
+ * Funktio taskStartButton arpoo jokaiseen tehtävä alueeseen numerot ja sieltä siirretään arrayhin.
+ * Monesko tehtävä menossa laskuri alkaa
+ * Arrayn nollaus 
+ * display none/ block , disabled = false
+ * nollaukset vastausteksteihin oliko oikein vai ei
+ * vastausten arpominen ja uudet arvot
+ */
 
 function taskStartButton() {
-    
+
     //percent laskukaavat
     let randomPriceNumber = getRndInteger(80, 200);
     let randomPercent = getRndInteger(20, 60);
@@ -284,16 +298,16 @@ function taskStartButton() {
     counter = document.getElementById("counter");
     counter.innerHTML = 1;
 
+    //oikeat ja väärät vastaukset nollataan.
     rightAnswers = [];
     wrongAnswers = [];
-
+    // tiettyjen elementtien display block / none
     document.getElementById("percenTask").style.display = "block";
     document.getElementById("startButton").style.display = "none";
     document.getElementById("loppuArvio").style.display = "none";
-    document.querySelector(".introText").style.display = "block";
     document.getElementById("pText").style.display = "none";
     document.getElementById("pCounterText").classList.add("countersize");
-
+    // kenttien nollaukset 
     document.getElementById("imgRewardHere").innerHTML = "";
 
     document.getElementById("percentAnswerText").innerHTML = "";
@@ -301,34 +315,34 @@ function taskStartButton() {
     document.getElementById("multiplicationAnswerText").innerHTML = "";
     document.getElementById("verbalAnswerText").innerHTML = "";
     document.getElementById("circleAnswerText").innerHTML = "";
-
+    // Bg inputeista valkeaksi ja laitetaan inputit taas toimimaan
     inputStyleAndDisabled(inputIds);
 
-    //percent
+    //percent valuet arvotaan ja spanneihin arvot
 
     answerShuffle(saleAmountA, saleAmount, saleAmountC, "percentA", "percentB", "percentC");
     spanAmount("price", "percent", randomPriceNumber, randomPercent)
 
-    //divide
+    //divide valuet arvotaan ja spanneihin arvot
     answerShuffle(hiredStudents, hiredStudentsB, hiredStudentsC, "divideA", "divideB", "divideC");
     spanAmount("priceDivide", "moneyAmount", randomPriceDivideNumber, randomMoneyAmount);
 
-    //Multiplication
+    //Multiplication valuet arvotaan ja spanneihin arvot
     answerShuffle(multiplicationAnswerA, multiplicationAnswer, multiplicationAnswerC, "multiplicationA", "multiplicationB", "multiplicationC");
     spanAmount("MultiplicationNumber", "MultiplicationNumberTwo", multiplicationRandomOne, multiplicationRandomTwo);
 
-    //Verbal
+    //Verbal valuet arvotaan ja spanneihin arvot
     answerShuffle(personInAllA, personsInAll, personInAllC, "verbalA", "verbalB", "verbalC");
     spanAmount("personsInFamily", "personsInFamilyTwo", personInFamilyRng, personsInFamilyTwoRng);
 
-    //piiri
+    //piiri valuet arvotaan ja spanneihin arvot
     answerShuffle(circlePerimeterA, circlePerimeter, circlePerimeterC, "circleA", "circleB", "circleC");
     document.getElementById("meters").innerHTML = metersRng;
 
 
 
 }
-
+// percent osion inputeista queryselectorit ja reagoimaan click , tekemään funtion percent asiat
 let inputPercentA = document.getElementById("percentA");
 inputPercentA.addEventListener("click", percent);
 
@@ -337,7 +351,7 @@ inputPercentB.addEventListener("click", percent);
 
 let inputPercentC = document.getElementById("percentC");
 inputPercentC.addEventListener("click", percent);
-
+// funktio painettaessa vaihtaa inputtien bg värit, tarkistaa oliko oikeapainallus oikein , vaihtaa buttonien disabled trueksi ( ei voida painaa enää), lisää tehtävälaskuria 3sec painalluksesta ja vaihtaa uuden div näkyville ja kyseisen poissa 3sec päästä painalluksesta.
 function percent(event) {
     answerColors(mathValues.saleamount, "percentA", "percentB", "percentC");
     document.getElementById("percentAnswerText").innerHTML = answerText(mathValues.saleamount, event.currentTarget.id, "mathPercent");
@@ -347,6 +361,7 @@ function percent(event) {
 
 
 }
+// Divide osion inputeista queryselectorit ja reagoimaan click , tekemään funtion divide asiat
 let inputDivideA = document.getElementById("divideA");
 inputDivideA.addEventListener("click", divide);
 
@@ -356,7 +371,7 @@ inputDivideB.addEventListener("click", divide);
 let inputDivideC = document.getElementById("divideC");
 inputDivideC.addEventListener("click", divide);
 
-//divide buttons A , b ja c
+// funktio painettaessa vaihtaa inputtien bg värit, tarkistaa oliko oikeapainallus oikein , vaihtaa buttonien disabled trueksi ( ei voida painaa enää), lisää tehtävälaskuria 3sec painalluksesta ja vaihtaa uuden div näkyville ja kyseisen poissa 3sec päästä painalluksesta.
 function divide(event) {
 
     answerColors(mathValues.hiredstudents, "divideA", "divideB", "divideC");
@@ -365,7 +380,7 @@ function divide(event) {
     timeOut("divideTask", "multiplicationTask", 3000);
     setTimeout(function () { counter.innerHTML = taskCounter(2); }, 3000);
 }
-
+// Multiplication osion inputeista queryselectorit ja reagoimaan click , tekemään funtion multiplication asiat
 let inputMultiplicationA = document.getElementById("multiplicationA");
 inputMultiplicationA.addEventListener("click", multiplication);
 
@@ -375,7 +390,7 @@ inputMultiplicationB.addEventListener("click", multiplication);
 let inputMultiplicationC = document.getElementById("multiplicationC");
 inputMultiplicationC.addEventListener("click", multiplication);
 
-//Multiplication buttons A ,B ja C
+// funktio painettaessa vaihtaa inputtien bg värit, tarkistaa oliko oikeapainallus oikein , vaihtaa buttonien disabled trueksi ( ei voida painaa enää), lisää tehtävälaskuria 3sec painalluksesta ja vaihtaa uuden div näkyville ja kyseisen poissa 3sec päästä painalluksesta.
 function multiplication(event) {
     answerColors(mathValues.multiplication, "multiplicationA", "multiplicationB", "multiplicationC");
     document.getElementById("multiplicationAnswerText").innerHTML = answerText(mathValues.multiplication, event.currentTarget.id, "mathMultiplication");
@@ -383,7 +398,7 @@ function multiplication(event) {
     timeOut("multiplicationTask", "verbalTask", 3000);
     setTimeout(function () { counter.innerHTML = taskCounter(3); }, 3000);
 }
-
+// Verbal osion inputeista queryselectorit ja reagoimaan click , tekemään funtion verbal asiat
 let inputVerbalA = document.getElementById("verbalA");
 inputVerbalA.addEventListener("click", verbal);
 
@@ -393,7 +408,7 @@ inputVerbalB.addEventListener("click", verbal);
 let inputVerbalC = document.getElementById("verbalC");
 inputVerbalC.addEventListener("click", verbal);
 
-//Verbal buttons A , B ja C
+// funktio painettaessa vaihtaa inputtien bg värit, tarkistaa oliko oikeapainallus oikein , vaihtaa buttonien disabled trueksi ( ei voida painaa enää), lisää tehtävälaskuria 3sec painalluksesta ja vaihtaa uuden div näkyville ja kyseisen poissa 3sec päästä painalluksesta.
 function verbal(event) {
     answerColors(mathValues.persons, "verbalA", "verbalB", "verbalC");
     document.getElementById("verbalAnswerText").innerHTML = answerText(mathValues.persons, event.currentTarget.id, "mathVerbal");
@@ -401,6 +416,7 @@ function verbal(event) {
     timeOut("verbalTask", "circleTask", 3000);
     setTimeout(function () { counter.innerHTML = taskCounter(4); }, 3000);
 }
+// Circle osion inputeista queryselectorit ja reagoimaan click , tekemään funtion Circle asiat
 let inputCircleA = document.getElementById("circleA");
 inputCircleA.addEventListener("click", circle);
 
@@ -410,14 +426,16 @@ inputCircleB.addEventListener("click", circle);
 let inputCircleC = document.getElementById("circleC");
 inputCircleC.addEventListener("click", circle);
 
-//Circle Perimiter
+/* funktio painettaessa vaihtaa inputtien bg värit, tarkistaa oliko oikeapainallus oikein , vaihtaa buttonien disabled trueksi ( ei voida painaa enää),
+ lisää tehtävälaskuria 3sec painalluksesta ja vaihtaa uuden div näkyville ja kyseisen poissa 13sec päästä painalluksesta. Tulee loading animaatio.
+ samalla tarkistaa pisteet, antaa palkinto kuvan ja tekstin.
+ */
 function circle(event) {
     answerColors(mathValues.perimeter, "circleA", "circleB", "circleC");
     document.getElementById("circleAnswerText").innerHTML = answerText(mathValues.perimeter, event.currentTarget.id, "mathCircle");
     buttonDisableEnable("circleA", "circleB", "circleC", true, true, true);
     document.getElementById("correctAnswers").innerHTML = rightAnswers.length;
     rewardImg();
-    document.querySelector(".introText").style.display = "none";
     timeOut("circleTask", "loading", 3000);
     timeOut("loading", "loppuArvio", 13000);
 

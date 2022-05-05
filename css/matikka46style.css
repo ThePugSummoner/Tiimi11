@@ -45,6 +45,7 @@ body {
     font-size: 2em;
 }
 
+/*Matikkapähkinät tekstien muokkaukset , inputtien muokkaukset ja eri osioiden muokkaukset ( prosentti , jakolasku......) alku*/
 .inputField {
     background-image: url(../images/abstract-g47b9c359c_1280.png);
     background-size: 100% 60%;
@@ -74,9 +75,6 @@ body {
     margin: auto;
     padding: 5px;
     text-align: center;
-
-
-
 }
 
 .answerText {
@@ -135,6 +133,8 @@ div.tausta input {
 
 }
 
+/*Matikkapähkinät tekstien muokkaukset , inputtien muokkaukset ja eri osioiden muokkaukset ( prosentti , jakolasku......) loppu*/
+/*Loading animation alku*/
 #loading {
     display: none;
     font-size: 0.7em;
@@ -175,6 +175,9 @@ div.tausta input {
     animation: animate 10s linear infinite;
 }
 
+/*Loading animation loppu*/
+
+/* Aaltomuotoinen koriste alku*/
 #bottomtausta {
     position: relative;
 }
@@ -193,13 +196,38 @@ div.tausta input {
     display: block;
     width: calc(160% + 1.3px);
     height: 50px;
-    /*https://www.shapedivider.app/*/
+
 }
 
 .custom-shape-divider-bottom-1650785033 .shape-fill {
     fill: #BD10E047;
 }
 
+.custom-shape-divider-bottom-1650782958 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 277px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1650782958 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Aaltomuotoinen koriste loppu*/
+
+/*Lopussa olevan divin muokkaukset imagerewardit, tekstit painike alku*/
 #loppuArvio {
     display: none;
     font-family: 'Permanent Marker';
@@ -270,6 +298,9 @@ div.tausta input {
     color: #fff;
 }
 
+/*Lopussa olevan divin muokkaukset imagerewardit, tekstit painike loppu*/
+
+/*Tausta neliö animaatio alku*/
 .elements div {
     position: absolute;
     background: transparent;
@@ -309,30 +340,11 @@ div.tausta input {
     animation: ball 7s linear infinite;
 }
 
+/*Tausta neliö animaatio loppu*/
 
-.custom-shape-divider-bottom-1650782958 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1650782958 svg {
-    position: relative;
-    display: block;
-    width: calc(145% + 1.3px);
-    height: 277px;
-    transform: rotateY(180deg);
-}
 
-.custom-shape-divider-bottom-1650782958 .shape-fill {
-    fill: #FFFFFF;
-}
-
-/*muuta*/
+/*Sidebar alku*/
 
 .fa-solid {
     width: 30px;
@@ -378,6 +390,9 @@ div.tausta input {
     background-color: rgb(46, 45, 45)
 }
 
+/*Sidebar loppu*/
+
+/*Animaatiot alku*/
 @keyframes ball {
 
     0% {
@@ -415,9 +430,9 @@ div.tausta input {
     }
 }
 
+/*Animaatiot loppu*/
 
-
-
+/*Media screen alku min-width 450px ( h1 , monestehtävälaskuri, aloitus button , tekstien määrittelyt laskutehtävä diveissä , loading animaatio, aaltokoriste ja tausta neliöt)*/
 @media screen and (min-width: 450px) {
 
     .headline {
@@ -564,6 +579,9 @@ div.tausta input {
 
 }
 
+/*Media screen loppu min-width 450px*/
+
+/*Media screen alku min-width 530px ( h1 , monestehtävälaskuri, aloitus button , tekstien määrittelyt laskutehtävä diveissä , loading animaatio, aaltokoriste ja tausta neliöt)*/
 @media screen and (min-width: 530px) {
 
     .headline {
@@ -698,6 +716,9 @@ div.tausta input {
 
 }
 
+/*Media screen loppu min-width 530px*/
+
+/*Media screen alku min-width 750px ( h1 , monestehtävälaskuri, aloitus button , tekstien määrittelyt laskutehtävä diveissä , loading animaatio, aaltokoriste ja tausta neliöt)*/
 @media screen and (min-width: 750px) {
 
     .headline {
@@ -834,7 +855,9 @@ div.tausta input {
 
 }
 
+/*Media screen loppu min-width 750px*/
 
+/*Media screen alku min-width 992px ( h1 , monestehtävälaskuri, aloitus button , tekstien määrittelyt laskutehtävä diveissä , loading animaatio, aaltokoriste ja tausta neliöt)*/
 @media screen and (min-width: 992px) {
 
     .headline {
@@ -965,7 +988,9 @@ div.tausta input {
 
 }
 
+/*Media screen loppu min-width 992px*/
 
+/*Media screen alku min-width 1312px ( h1 , monestehtävälaskuri, aloitus button , tekstien määrittelyt laskutehtävä diveissä , loading animaatio, aaltokoriste ja tausta neliöt)*/
 @media screen and (min-width: 1312px) {
 
     .headline {
@@ -1109,6 +1134,7 @@ div.tausta input {
 
 }
 
+/*Media screen loppu min-width 1312px*/
 
 
 
@@ -1122,8 +1148,9 @@ div.tausta input {
 
 
 
+/*Mallia otettu näistä sivustoilta ja ohjeista*/
 
-
+/*https://www.shapedivider.app/ Aaltokoristeen sivusto*/
 /*     https://www.youtube.com/watch?v=Ebn7YlsHqPo        loading animation opetusvideo*/
 
 /*https://www.youtube.com/watch?v=AIYAbO5wHgM     ball animation opetusvideo*/
