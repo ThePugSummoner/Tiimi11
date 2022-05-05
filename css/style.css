@@ -97,7 +97,11 @@ div {
 }
 
 p {
-  margin: 3em 3em 3em 7em;
+  font-size: 1.2em;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 2em;
+  margin-bottom: 1em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -154,7 +158,8 @@ footer div p{
   width:fit-content;
   margin-left: auto;
   margin-right: auto;
-  list-style-type: none;  
+  list-style-type: none; 
+  margin-top: 5px; 
 }
 .specialh2{
   
