@@ -1,3 +1,5 @@
+/* määritellään kysymykset ja niiden oikeat vastaukset */
+
 const quizData = [
     {
         question: "Minä vuonna Suomi itsenäistyi?",
@@ -31,9 +33,8 @@ const quizData = [
         d: "Kuolonkorjuu",
         correct: "b",
     },
-
-
 ];
+/* Haetaan html:stä tiedot kysmyslaatikoihin */
 
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
@@ -77,6 +78,7 @@ function getSelected() {
     return answer
 }
 
+/* Laskee testin tuloksen */
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()

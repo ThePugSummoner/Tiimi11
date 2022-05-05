@@ -1,3 +1,4 @@
+/* Sivuston tausta ja navbar */
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -11,7 +12,7 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
 }
-
+/* */
 html {
   height: -webkit-fill-available;
 }
@@ -189,6 +190,7 @@ footer div p{
     background-color: rgb(46, 45, 45)
   }
 }
+/* Tästä alkaa vastauslaatikon muokkaus */
 *{
   box-sizing: border-box;
 
@@ -232,7 +234,7 @@ ul li label{
   cursor: pointer;
 }
 
-/* Taustan väri ja painikkeiden värit */
+/* Painikkeiden värit */
 
 button{
   background-color: #892696;
