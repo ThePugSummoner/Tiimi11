@@ -367,8 +367,14 @@ function submitAnswer() {
 }
 
 function countPoints() {
-    if (count == 5)
-    document.getElementById("picture").innerHTML = "<img src ='../images/traveller-3213992_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
-    document.getElementById("questionHere").innerHTML = "Olet vastanut kaikiin kysymyksiin oikein. Sinun pistemääräsi on " + count;
-    document.getElementById("header").innerHTML = "Tuloksesi";
+    if (count == 5) {
+        document.getElementById("picture").innerHTML = "<img src ='../images/traveller-3213992_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Olet vastanut kaikiin kysymyksiin oikein. Sinun pistemääräsi on " + count;
+        document.getElementById("header").innerHTML = "Tuloksesi";
+    }
+    else if (count == 4) {
+        document.getElementById("picture").innerHTML = "<img src ='../images/traveller-3213992_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Hyvä suoritus! Sinun pistemääräsi on " + count;
+        document.getElementById("header").innerHTML = "Tuloksesi";
+    }
 }
