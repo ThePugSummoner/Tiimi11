@@ -1,7 +1,9 @@
+/* Miisa Sammalkangas */
+
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-    background-image: url(../images/watercolors-413275.jpg);
+    background-image: url(../images/tautakuva.jpg);
     background-position: fixed;
     display: flex;
     flex-wrap: nowrap;
@@ -11,7 +13,25 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
   }
-  
+  .quiz-container{
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .quiz-header{
+    padding: 1em;
+  }
+   
+  h2{
+      background-color: coral;
+      text-align: center;
+      padding: 1rem;
+      margin: 0;
+  }
+
   html {
     height: -webkit-fill-available;
   }
@@ -19,6 +39,23 @@ body {
   div {
     overflow-y: auto;
   }
+
+  /*Kysymysboksien tyylittelyt*/
+   
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    bottom: 50%;
+  }
+
+  ul li label{
+    cursor: pointer;
+  }
+
   
   .bi {
     vertical-align: -.125em;
@@ -41,16 +78,11 @@ body {
   p {
     margin-top: 1em;
     margin-left: 3em;
+    margin-right: 3em;
     text-align: center;
     padding-left: 2em;
     padding-right: 2em;
   }
-  
-  h1, h2 {
-    margin-top: 1em;
-    text-align: center;
-  }
-
   .container-fluid {
     padding-top: 0.5em;
     height: 4em;
@@ -68,17 +100,17 @@ body {
   .offcanvas {
     width: fit-content;
   }
-    
+  /*Navigoinnin määritykset*/
   .nav-link {
     color: antiquewhite;
   }
   
   .nav-link:hover {
-    color: rgb(144, 144, 250);
+    color: rgb(250, 144, 144);
   }
 
   .nav-link:focus {
-      color: rgb(144, 144, 250);
+      color: rgb(250, 144, 144);
   }
   
   .navbar-toggler {
@@ -93,7 +125,7 @@ body {
     border-color: antiquewhite;
     background-color: rgb(46, 45, 45)
   }
-  
+  /*Navigointinappien määritysket*/
   .btn-toolbar{
     margin-top: 1em;
     justify-content: center;
@@ -109,16 +141,36 @@ body {
   }
 
   .btn:hover {
-    color: rgb(144, 144, 250);
+    color: rgb(227, 115, 71);
   }
-  
+
+  /*Valintanapin määritykset*/
+  button{
+    background-color: coral;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+  }
+  button:hover{
+    background-color: green; 
+  }
+  button:focus{
+    outline: none;
+    background-color: green;
+  }
+  /*Footerin määritykset*/
   footer {
     display: flex;
     background-color:rgb(46, 45, 45);
     color: antiquewhite;
     height: fit-content;
     justify-content: space-around;
-    width: 100%;
+    width: auto;
     }
   
   footer div p{
@@ -153,13 +205,13 @@ body {
     .btn-toolbar {
       flex-direction:row;
     }
-
-    }
+  }
   
   @media (max-width: 576px) {
   
     footer {
       display: block;
+      
     }
   
     body {
@@ -189,3 +241,9 @@ body {
       background-color: rgb(46, 45, 45)
     }
   }
+
+  *{
+    box-sizing: border-box;
+  }
+  
+ 
