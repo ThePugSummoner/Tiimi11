@@ -69,26 +69,37 @@
     </nav>
     <div>
       <div>
-      <h2 id="question10">Kysymys #10</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ipsum aliquid eius reprehenderit magnam neque iure. 
-        Quae ab aut perferendis cupiditate obcaecati voluptate voluptates reprehenderit fugiat, repellat dolor sequi dolorum?
-      Quae culpa ipsa neque quaerat veniam laboriosam corrupti deserunt harum corporis molestias ratione accusamus odit assumenda 
-      sint recusandae porro eligendi repellat amet doloribus magnam cumque, animi sunt expedita? Eveniet, dignissimos.</p>
-      <div>
-        <div class="btn-toolbar" role="toolbar">
-          <button type="button" class="btn btn-primary">Vaihtoehto1</button>
-          <button type="button" class="btn btn-primary">Vaihtoehto2</button>
-          <button type="button" class="btn btn-primary">Vaihtoehto3</button>
-          <button type="button" class="btn btn-primary">Vaihtoehto4</button>
+      <h2>Historiatietovisa</h2>
+
+      <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Historia Tietovisa</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Answer1</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Answer2</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer3</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer4</label>
+            </li>
+    
+          </ul>
         </div>
-        <div class="btn-toolbar" role="toolbar">
-          <a class="btn btn-primary" href="#question9" role="button">Edellinen</a>
-          <a class="btn btn-primary disabled" href="#" role="button">Lähetä</a>
-        </div>
+    
+        <button id="submit">Vastaa</button>
       </div>
-      <div>
-        <footer>
-          <div>
             <p>Tiettojenkäsittely TIK22KM</p>
           </div>
           <div>
@@ -102,6 +113,7 @@
     </div>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/his.js"></script>
   <script src="https://kit.fontawesome.com/0d05d2dbfa.js" crossorigin="anonymous"></script>
   </body>
 </html>
