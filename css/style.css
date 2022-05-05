@@ -200,7 +200,7 @@ footer div p{
     background-color: rgb(46, 45, 45)
   }
 
-  #globe {
+  #globe, #history {
     height: 47.5%;
     width: 50%;
   }
@@ -231,7 +231,7 @@ footer div p{
     background-color: rgb(46, 45, 45)
   }
 
-  #globe {
+  #globe, #history {
       height: 47.5%;
       width: 50%;
     }
