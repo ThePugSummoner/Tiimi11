@@ -304,7 +304,7 @@ function taskStartButton() {
     // tiettyjen elementtien display block / none
     document.getElementById("percenTask").style.display = "block";
     document.getElementById("startButton").style.display = "none";
-    document.getElementById("loppuArvio").style.display = "none";
+    document.getElementById("endRewards").style.display = "none";
     document.getElementById("pText").style.display = "none";
     document.getElementById("pCounterText").classList.add("countersize");
     // kenttien nollaukset 
@@ -437,7 +437,7 @@ function circle(event) {
     document.getElementById("correctAnswers").innerHTML = rightAnswers.length;
     rewardImg();
     timeOut("circleTask", "loading", 3000);
-    timeOut("loading", "loppuArvio", 13000);
+    timeOut("loading", "endRewards", 13000);
 
 
 }

@@ -228,7 +228,7 @@ div.tausta input {
 /* Aaltomuotoinen koriste loppu*/
 
 /*Lopussa olevan divin muokkaukset imagerewardit, tekstit painike alku*/
-#loppuArvio {
+#endRewards {
     display: none;
     font-family: 'Permanent Marker';
     text-align: justify;
@@ -517,7 +517,7 @@ div.tausta input {
         font-size: 1em;
     }
 
-    #loppuArvio {
+    #endRewards {
         background-size: 100% 100%;
         font-size: 1em;
         height: 35%;
@@ -654,7 +654,7 @@ div.tausta input {
         font-size: 1.2em;
     }
 
-    #loppuArvio {
+    #endRewards {
         background-size: 100% 100%;
         font-size: 1.1em;
         width: 65%;
@@ -792,7 +792,7 @@ div.tausta input {
         font-size: 1.2em;
     }
 
-    #loppuArvio {
+    #endRewards {
         background-size: 100% 100%;
         font-size: 1.3em;
         width: 60%;
@@ -926,7 +926,7 @@ div.tausta input {
         font-size: 1.2em;
     }
 
-    #loppuArvio {
+    #endRewards {
         background-size: 100% 100%;
         font-size: 1.3em;
         width: 60%;
@@ -1070,7 +1070,7 @@ div.tausta input {
         font-size: 1.2em;
     }
 
-    #loppuArvio {
+    #endRewards {
         background-size: 100% 100%;
         font-size: 1.3em;
         border-radius: 20px;
