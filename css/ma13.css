@@ -1,35 +1,39 @@
 /* Miisa Sammalkangas */
 
 body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    background-image: url(../images/tautakuva.jpg);
+    background-image: url(../images/paper-2050768.jpg);
     background-position: fixed;
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100vh;
-    height: -webkit-fill-available;
-    max-height: 100vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
+   }
   .quiz-container{
     background-color: rgb(255, 255, 255);
     opacity: 80%;
     border-radius: 15px;
-    width: 600px;
-    height: 450px;
-    overflow: hidden;
+    margin: 5em 5em 5em 5em;
+    padding: 1em;
   }
   .quiz-header{
     padding: 1em;
   }
-   
+  #image{
+    margin: 2em;
+    text-align: center;
+  }
+  
   h2{
       background-color: coral;
+      border-radius: 15px;
       text-align: center;
-      padding: 1rem;
-      margin: 0;
+      padding: 1em;
+      margin: 2rem;
+  }
+
+  #otsikko{
+    background-color: coral;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1em;
+    margin: 2em;
+    opacity: 80%;
   }
 
   html {
@@ -44,7 +48,7 @@ body {
    
   ul{
     list-style-type: none;
-    padding: 0;
+    margin: 2em 2em 2em 2em;
   }
   ul li{
     font-size: 1.2rem;
@@ -62,13 +66,6 @@ body {
     pointer-events: none;
     fill: currentColor;
   }
-  
-  .scrollarea {
-    overflow-y: auto;
-  }
-  
-  .fw-semibold { font-weight: 600; }
-  .lh-tight { line-height: 1.25; }
   
   .fa-solid {
     width: 30px;
@@ -125,39 +122,22 @@ body {
     border-color: antiquewhite;
     background-color: rgb(46, 45, 45)
   }
-  /*Navigointinappien määritysket*/
-  .btn-toolbar{
-    margin-top: 1em;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .btn-toolbar .btn {
-    color: antiquewhite;
-    background-color: rgb(46, 45, 45);
-    border-color:rgb(46, 45, 45);
-    margin: 1em 1em 1em 1em;
-    width: max-content;
-  }
-
-  .btn:hover {
-    color: rgb(227, 115, 71);
-  }
 
   /*Valintanapin määritykset*/
   button{
     background-color: coral;
+    border-radius: 55px;
     color: #fff;
     border: none;
     display: block;
     width: 100%;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-family: inherit;
-    padding: 1.3rem;
   }
   button:hover{
     background-color: green; 
+    opacity: 80%;
   }
   button:focus{
     outline: none;
