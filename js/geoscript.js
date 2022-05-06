@@ -91,7 +91,7 @@ let questions = [
     },
 
     {
-        text: "Kalteva torni on italialaisen kaupungin tuomiokirkon kellotorni Piazza dei Miracolin alueella. Torni on tullut kuuluisaksi siitä, että se on kallellaan. Romaanista tyyliä edustavan tornin rakentaminen aloitettiin vuonna 1173. Sen kallistuminen aiheutti taukoja rakentamiseen, ja kellotapuli valmistui vasta vuonna 1370. Tornissa on seitsemän kirkonkelloa. Tornin kallistuminen saatiin pysäytettyä 1990-luvulla aloitetussa suoristushankkeessa. Missä kaupungissa kalteva torni sijaitsee?",
+        text: "Kalteva torni on italialaisen kaupungin tuomiokirkon kellotorni. Torni on tullut kuuluisaksi siitä, että se on kallellaan. Romaanista tyyliä edustavan tornin rakentaminen aloitettiin vuonna 1173. Sen kallistuminen aiheutti taukoja rakentamiseen, ja kellotapuli valmistui vasta vuonna 1370. Tornin kallistuminen saatiin pysäytettyä 1990-luvulla aloitetussa suoristushankkeessa. Missä kaupungissa kalteva torni sijaitsee?",
         imgFile: "../images/italy-4681065_640.jpg",
         answer: [
             "Venetsiassa",

@@ -152,6 +152,8 @@ body {
 
   .alert {
     text-align: center;
+    margin-bottom: 0;
+    padding: 0.8em;
   }
   
   footer {
@@ -241,6 +243,7 @@ body {
     footer {
       display: block;
       position: relative;
+      bottom: 0;
     }
 
     img {
@@ -274,6 +277,7 @@ body {
     footer {
       display: block;
       position: relative;
+      bottom:0;
     }
   
     body {
