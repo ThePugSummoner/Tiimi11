@@ -225,22 +225,23 @@ let rightAnswers = [questions[0].answer[0],
 ];
 
 function countAnswers1() {   
+
+        document.getElementById("btn1").disabled = true;
+        document.getElementById("btn2").disabled = true;
+        document.getElementById("btn3").disabled = true;
+        document.getElementById("btn4").disabled = true;
+        document.getElementById("btn6").disabled = false;
         
     for (let j = 0; j < rightAnswers.length; j++) {
             
         if (document.getElementById("btn1").innerHTML == rightAnswers[j]) {
             count++;
-            document.getElementById("btn1").disabled = true;
-            document.getElementById("btn2").disabled = true;
-            document.getElementById("btn3").disabled = true;
-            document.getElementById("btn4").disabled = true;
-            document.getElementById("btn6").disabled = false;
             document.getElementById("result").innerHTML = "<div class='alert alert-success' role='alert'>" + 
             "Vastauksesi on oikein!" + "</div>";
-            check1.setAttribute("disable");
-            check2.setAttribute("disable");
-            check3.setAttribute("disable");
-            check4.setAttribute("disable");
+            check1.setAttribute("disabled");
+            check2.setAttribute("disabled");
+            check3.setAttribute("disabled");
+            check4.setAttribute("disabled");
         }
         else {
             document.getElementById("result").innerHTML = "<div class='alert alert-danger' role='alert'>" + 
@@ -263,10 +264,10 @@ function countAnswers2() {
             count++;
             document.getElementById("result").innerHTML = "<div class='alert alert-success' role='alert'>" + 
             "Vastauksesi on oikein!" + "</div>";
-            check1.setAttribute("disable");
-            check2.setAttribute("disable");
-            check3.setAttribute("disable");
-            check4.setAttribute("disable");
+            check1.setAttribute("disabled");
+            check2.setAttribute("disabled");
+            check3.setAttribute("disabled");
+            check4.setAttribute("disabled");
         }
         else {
             document.getElementById("result").innerHTML = "<div class='alert alert-danger' role='alert'>" + 
@@ -289,11 +290,12 @@ function countAnswers3() {
             count++;
             document.getElementById("result").innerHTML = "<div class='alert alert-success' role='alert'>" + 
             "Vastauksesi on oikein!" + "</div>";
-            check1.setAttribute("disable");
-            check2.setAttribute("disable");
-            check3.setAttribute("disable");
-            check4.setAttribute("disable");
+            check1.setAttribute("disabled");
+            check2.setAttribute("disabled");
+            check3.setAttribute("disabled");
+            check4.setAttribute("disabled");
         }
+
         else {
             document.getElementById("result").innerHTML = "<div class='alert alert-danger' role='alert'>" + 
             "Vastauksesi on väärin!" + "</div>";
@@ -315,10 +317,10 @@ function countAnswers4() {
             count++;
             document.getElementById("result").innerHTML = "<div class='alert alert-success' role='alert'>" + 
             "Vastauksesi on oikein!" + "</div>";
-            check1.setAttribute("disable");
-            check2.setAttribute("disable");
-            check3.setAttribute("disable");
-            check4.setAttribute("disable");
+            check1.setAttribute("disabled");
+            check2.setAttribute("disabled");
+            check3.setAttribute("disabled");
+            check4.setAttribute("disabled");
         }
         else {
             document.getElementById("result").innerHTML = "<div class='alert alert-danger' role='alert'>" + 
@@ -367,14 +369,45 @@ function submitAnswer() {
 }
 
 function countPoints() {
+    
+    check2.removeEventListener("click", countAnswers2);
+    check3.removeEventListener("click", countAnswers3);
+
+    check1.remove();
+    check2.innerHTML = "<a href='../index.html'>Palaa takaisin</a>";
+    check3.innerHTML = "<a href='maantieto2.html'>Yritä uudelleen</a>";
+    check4.remove();
+    submit.remove();
+
+    
     if (count == 5) {
-        document.getElementById("picture").innerHTML = "<img src ='../images/traveller-3213992_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
-        document.getElementById("questionHere").innerHTML = "Olet vastanut kaikiin kysymyksiin oikein. Sinun pistemääräsi on " + count;
+        document.getElementById("picture").innerHTML = "<img src ='../images/great-2339957_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Aivan loistava! Olet vastannut kaikkiin kysymyksiin oikein. Arvosanasi on erinomainen. Sinun pistemääräsi on " + count + ". " + "Haluatko yrittää uudelleen?";
         document.getElementById("header").innerHTML = "Tuloksesi";
     }
     else if (count == 4) {
+        document.getElementById("picture").innerHTML = "<img src ='../images/holidays-1283014_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Mahtava! Arvosanasi on kiitettävä! Sinun pistemääräsi on " + count + ". " + "Haluatko yrittää uudelleen?";
+        document.getElementById("header").innerHTML = "Tuloksesi";
+    }
+    else if (count == 3) {
+        document.getElementById("picture").innerHTML = "<img src ='../images/map-of-the-world-2401458_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Vastasit oikein kolmeen kysymyksiin. Arvosanasi on hyvä! Sinun pistemääräsi on " + count + ". " + "Haluatko yrittää uudelleen?";
+        document.getElementById("header").innerHTML = "Tuloksesi";
+    }
+    else if (count == 2) {
+        document.getElementById("picture").innerHTML = "<img src ='../images/camera-1130731_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Tällä kerta 2 oikeinta vastausta. Arvosanasi on tyydyttävä. Sinun pistemääräsi on " + count + ". " + "Haluatko yrittää uudelleen?";
+        document.getElementById("header").innerHTML = "Tuloksesi";
+    }
+    else if (count == 1) {
+        document.getElementById("picture").innerHTML = "<img src ='../images/globe-5657086_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
+        document.getElementById("questionHere").innerHTML = "Voi harmi! Tällä kerta sinun pistemääräsi on " + count + ". " + "Kannattaako yrittää uudelleen?";
+        document.getElementById("header").innerHTML = "Tuloksesi";
+    }
+    else if (count == 0) {
         document.getElementById("picture").innerHTML = "<img src ='../images/traveller-3213992_640.jpg' class='rounded mx-auto d-block my-5' alt=''/>";
-        document.getElementById("questionHere").innerHTML = "Hyvä suoritus! Sinun pistemääräsi on " + count;
+        document.getElementById("questionHere").innerHTML = "Hups! Jotain meni väärin. Valitettavasti sinun pistemääräsi on " + count + "." + " Aina voi korottaa arvosanan suorittamalla visan uudelleen!";
         document.getElementById("header").innerHTML = "Tuloksesi";
     }
 }

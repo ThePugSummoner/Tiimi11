@@ -37,6 +37,12 @@ body {
     width: 30px;
     height: 30px;
   }
+
+  .content {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
   
   #scrollspyHeading1 {
     margin-top: 1em;
@@ -60,7 +66,15 @@ body {
     margin-bottom: 1em;
     text-align: center;
   }
-    
+  
+  a {
+    color:antiquewhite;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(144, 144, 250);
+  }
   .nav-link {
     color: antiquewhite;
   }
@@ -188,7 +202,7 @@ body {
     height: 426px;
   }
 
-  @media (max-width: 1024px) {
+  /*@media (max-width: 1024px) {
     
     footer {
       display: block;
@@ -219,7 +233,7 @@ body {
       flex-direction:row;
     }
 
-    }
+    }*/
   
   
   @media (max-width: 768px) {
